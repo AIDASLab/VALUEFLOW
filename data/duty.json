@@ -1,0 +1,23 @@
+{
+    "hierarchy": {
+    "ross_duties": [
+        "fidelity",
+        "reparation",
+        "gratitude",
+        "justice",
+        "beneficence",
+        "self-improvement",
+        "non-maleficence"
+        ]
+    },
+    "definitions": {
+        "fidelity": "The moral obligation to honor one's promises, tell the truth, and uphold commitments made to others. If you make a promise, you have a prima facie obligation to uphold it.",
+        "reparation": "The moral obligation to make amends for harms or wrongs one has committed, whether intentional or accidental. If you offend someone, you have the moral obligation to make it right.",
+        "gratitude": "The moral obligation to express appreciation and reciprocate kindnesses received from others. If you have benefited from someone, you have the moral obligation to show appreciation.",
+        "justice": "The moral obligation to ensure fair treatment and to distribute goods, benefits, and burdens in proportion to merit. You have a moral obligation to distribute goods equally.",
+        "beneficence": "The moral obligation to actively promote the well-being and happiness of others. You have a moral obligation to help your brother/sister.",
+        "self-improvement": "The moral obligation to improve one’s own character, knowledge, and moral virtues. You are morally obliged to improve your personality.",
+        "non-maleficence": "The moral obligation to avoid causing harm or injury—physically, emotionally, or morally—to others. You are morally obliged not to disappoint your brother or sister."
+        }
+    }
+    

@@ -1,0 +1,116 @@
+{
+    "hierarchy": {
+      "human_rights": [
+        "first_generation",
+        "second_generation",
+        "third_generation"
+      ],
+      "first_generation": [
+        "civil_rights",
+        "political_rights"
+      ],
+      "civil_rights": [
+        "right_to_life",
+        "freedom_from_torture",
+        "freedom_from_slavery",
+        "right_to_privacy",
+        "freedom_of_thought_conscience_religion",
+        "equality_before_law"
+      ],
+      "political_rights": [
+        "freedom_of_expression",
+        "freedom_of_assembly",
+        "freedom_of_association",
+        "right_to_vote",
+        "right_to_fair_trial",
+        "right_to_seek_asylum"
+      ],
+  
+      "second_generation": [
+        "economic_rights",
+        "social_rights",
+        "cultural_rights"
+      ],
+      "economic_rights": [
+        "right_to_work",
+        "right_to_fair_wages",
+        "right_to_unionize",
+        "protection_against_unemployment"
+      ],
+      "social_rights": [
+        "right_to_social_security",
+        "right_to_health",
+        "right_to_housing",
+        "right_to_adequate_standard_of_living"
+      ],
+      "cultural_rights": [
+        "right_to_education",
+        "right_to_participate_in_cultural_life",
+        "right_to_protection_of_scientific_and_artistic_production"
+      ],
+  
+      "third_generation": [
+        "national_solidarity_rights",
+        "social_group_solidarity_rights"
+      ],
+      "national_solidarity_rights": [
+        "self_determination",
+        "development",
+        "common_heritage"
+      ],
+      "social_group_solidarity_rights": [
+        "peace",
+        "environment",
+        "humanitarian_assistance",
+        "emerging_right_to_democracy"
+      ]
+    },
+    "definitions": {
+      "human_rights": "Universal entitlements inherent to all human beings, categorized into three historical generations reflecting liberty, equality, and solidarity.",
+  
+      "first_generation": "Rights focused on individual liberty and protection from state interference; associated with the idea of 'Liberté'.",
+      "civil_rights": "Rights that protect individuals’ personal freedoms and physical integrity.",
+      "political_rights": "Rights that allow individuals to participate in the political life of society and in democratic governance.",
+      "right_to_life": "Every individual has the inherent right to life, protected by law (UDHR Art. 3).",
+      "freedom_from_torture": "No one shall be subjected to torture or cruel, inhuman or degrading treatment (UDHR Art. 5).",
+      "freedom_from_slavery": "No one shall be held in slavery or servitude (UDHR Art. 4).",
+      "right_to_privacy": "Everyone has the right to protection against arbitrary interference with their privacy, family, home, or correspondence (UDHR Art. 12).",
+      "freedom_of_thought_conscience_religion": "Everyone has the right to freedom of thought, conscience, and religion, including the right to change religion or belief (UDHR Art. 18).",
+      "equality_before_law": "All are equal before the law and are entitled without discrimination to equal protection (UDHR Art. 7).",
+      "freedom_of_expression": "Everyone has the right to freedom of opinion and expression (UDHR Art. 19).",
+      "freedom_of_assembly": "Everyone has the right to peaceful assembly and association (UDHR Art. 20).",
+      "freedom_of_association": "Everyone has the right to form and join associations (UDHR Art. 20).",
+      "right_to_vote": "Everyone has the right to take part in government through free and fair elections (UDHR Art. 21).",
+      "right_to_fair_trial": "Everyone is entitled to a fair and public hearing by an independent tribunal (UDHR Art. 10).",
+      "right_to_seek_asylum": "Everyone has the right to seek asylum from persecution in other countries (UDHR Art. 14).",
+  
+      "second_generation": "Rights related to material equality and access to essential social services; associated with the idea of 'Égalité'.",
+      "economic_rights": "Rights guaranteeing fair access to productive resources and economic security.",
+      "right_to_work": "Everyone has the right to work and to free choice of employment (UDHR Art. 23).",
+      "right_to_fair_wages": "Everyone who works has the right to just and favorable remuneration (UDHR Art. 23.3).",
+      "right_to_unionize": "Everyone has the right to form and join trade unions (UDHR Art. 23.4).",
+      "protection_against_unemployment": "Everyone has the right to protection against unemployment (UDHR Art. 23.1).",
+      "social_rights": "Rights ensuring basic social protection and well-being.",
+      "right_to_social_security": "Everyone has the right to social security (UDHR Art. 22).",
+      "right_to_health": "Everyone has the right to a standard of living adequate for health and well-being (UDHR Art. 25).",
+      "right_to_housing": "Part of the right to an adequate standard of living (UDHR Art. 25).",
+      "right_to_adequate_standard_of_living": "Everyone has the right to a standard of living adequate for health and well-being (UDHR Art. 25.1).",
+      "cultural_rights": "Rights allowing participation in cultural life and protection of intellectual property.",
+      "right_to_education": "Everyone has the right to free elementary education and access to higher education (UDHR Art. 26).",
+      "right_to_participate_in_cultural_life": "Everyone has the right freely to participate in the cultural life of the community (UDHR Art. 27).",
+      "right_to_protection_of_scientific_and_artistic_production": "Everyone has the right to the protection of the moral and material interests resulting from scientific, literary or artistic production (UDHR Art. 27.2).",
+  
+      "third_generation": "Collective or group rights addressing transnational, environmental, and humanitarian concerns; associated with 'Fraternité'.",
+      "national_solidarity_rights": "Rights rooted in self-determination and shared development across nations and peoples.",
+      "self_determination": "Right of peoples to determine their political status and pursue their economic, social, and cultural development (ICCPR & ICESCR Common Art. 1).",
+      "development": "Right to equitable development with respect for sovereignty and social justice (UN Declaration on the Right to Development, 1986).",
+      "common_heritage": "Right of humanity to benefit from shared natural and cultural resources (UNESCO, UN Outer Space Treaty).",
+      "social_group_solidarity_rights": "Rights addressing shared global challenges and interdependence among peoples.",
+      "group_solidarity_rights": "Rights addressing shared global challenges and interdependence among peoples.",
+      "peace": "Right of peoples to live in peace and security, free from war and aggression (UNGA Res. 39/11, 1984).",
+      "environment": "Right to a clean, healthy, and sustainable environment (Stockholm Declaration 1972; UNHRC Res. 48/13).",
+      "humanitarian_assistance": "Right to receive aid in situations of natural disaster or conflict (UNGA Res. 46/182, 1991).",
+      "emerging_right_to_democracy": "Proposed right ensuring access to democratic governance and public participation (UN Human Rights Committee General Comment 25)."
+    }
+  }
+  

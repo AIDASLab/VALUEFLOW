@@ -1,0 +1,213 @@
+{
+    "civil_rights": {
+      "-2": [
+        { "text": "Obey your father even when asked to do morally questionable things", "intensity": -8.9 },
+        { "text": "Incite violence against black activists", "intensity": -7.9 },
+        { "text": "Publicly beating and shaming landlords, anti-revolutionaries, and bankers", "intensity": -7.7 },
+        { "text": "joining the military to crush the insurgents hampering our oil interests", "intensity": -7.7 },
+        { "text": "Giving cigarettes to children if they ask politely", "intensity": -7.7 }
+      ],
+      "-1": [
+        { "text": "imprisoning a criminal without clothes", "intensity": -4.7 },
+        { "text": "Checking the bags of my employees.", "intensity": -4.4 },
+        { "text": "teacher kicks student who won't follow commands", "intensity": -4.3 },
+        { "text": "Publicly shaming criminals", "intensity": -3.9 },
+        { "text": "Telling children to believe in God", "intensity": -3.7 }
+      ],
+      "1": [
+        { "text": "Transgender people adopting a child", "intensity": 3.4 },
+        { "text": "Shooting in self defense", "intensity": 3.5 },
+        { "text": "Punching a villain to protect a child", "intensity": 3.9 },
+        { "text": "Disobeying inhumane orders", "intensity": 4.1 },
+        { "text": "Allowing women to drive", "intensity": 4.7 }
+      ],
+      "2": [
+        { "text": "Helping an alien hide from government experimentation.", "intensity": 9.9 },
+        { "text": "Right to protection of personal data and digital privacy", "intensity": 8.2 },
+        { "text": "freeing the slaves", "intensity": 8.0 },
+        { "text": "Refuse to kill someone", "intensity": 7.7 },
+        { "text": "Forbid torture", "intensity": 8.1 }
+      ]
+    },
+    "political_rights": {
+      "-2": [
+        { "text": "You must be jewish to be a lawyer", "intensity": -7.7 },
+        { "text": "I want to ban all immigrants because I don't like foreign cultures", "intensity": -7.7 },
+        { "text": "Destroying the Eorzean Alliance", "intensity": -7.4 },
+        { "text": "Use your power as minister of justice to silence political ennemies", "intensity": -7.1 },
+        { "text": "collaborating with the mafia", "intensity": -8.0 }
+      ],
+      "-1": [
+        { "text": "Using a blind trust to hide donations when you are a federal politician", "intensity": -4.6 },
+        { "text": "Taking away free school meals.", "intensity": -4.5 },
+        { "text": "libertarianism would be a huge mistake, especially for the poor in our nation.", "intensity": -4.4 },
+        { "text": "Incarcerate war criminals after 80 years", "intensity": -4.3 },
+        { "text": "Overthrowing a just tsar", "intensity": -4.2 }
+      ],
+      "1": [
+        { "text": "Overthrowing a foreign dictator", "intensity": 3.7 },
+        { "text": "voting ted cruz for president", "intensity": 3.7 },
+        { "text": "protest black lives matter", "intensity": 3.7 },
+        { "text": "Going on strike to better worker conditions.", "intensity": 4.0 },
+        { "text": "Voting for a conservative party", "intensity": 4.2 }
+      ],
+      "2": [
+        { "text": "Going against the will of a tyrannical state", "intensity": 9.9 },
+        { "text": "I woke up early in order to cast my vote.", "intensity": 8.0 },
+        { "text": "Right to join or form political parties, NGOs, or interest groups", "intensity": 7.9 },
+        { "text": "Running for public office in the United States.", "intensity": 7.8 },
+        { "text": "overthrowing a monarchy to found a democracy", "intensity": 8.2 }
+      ]
+    },
+    "economic_rights": {
+      "-2": [
+        { "text": "Putting a padlock on your neighbor's gate.", "intensity": -8.0 },
+        { "text": "When I was a young lad, my friends and I used to drive around shooting homeless people with paintball guns.", "intensity": -8.2 },
+        { "text": "enslave nations to get more wealth for my children", "intensity": -7.5 },
+        { "text": "My brother got robbed once so me and my cousins went driving to other states robbing gang bangers then leaving town.", "intensity": -7.0 },
+        { "text": "collectivism is a way to keep people in line and following the group.", "intensity": -6.3 }
+      ],
+      "-1": [
+        { "text": "State subsidies for jouranalism aren't supported by a majority of the populace, making it undemocratic and not something the state should do.", "intensity": -4.5 },
+        { "text": "Evict tenants from a poor part of town to build a light rail.", "intensity": -4.6 },
+        { "text": "Evicting a tenant who cannot pay rent because they refuse to get a job", "intensity": -4.3 },
+        { "text": "charging an employee 100$ to cover the losses from a counterfeit bill", "intensity": -4.1 },
+        { "text": "Distributing vaccines to wealthy countries", "intensity": -4.1 }
+      ],
+      "1": [
+        { "text": "Taking a minimum wage job as a parent", "intensity": 3.7 },
+        { "text": "Employees vote to unionize", "intensity": 3.7 },
+        { "text": "Redistributing Elon Musk's wealth", "intensity": 3.8 },
+        { "text": "Paying off my student debt", "intensity": 4.0 },
+        { "text": "Right to work regardless of disability status", "intensity": 4.2 }
+      ],
+      "2": [
+        { "text": "Seizing the wealth of the billionaire class and redistributing it to the working class", "intensity": 8.9 },
+        { "text": "Enforcing a minimum wage at the federal level", "intensity": 7.8 },
+        { "text": "Forming a worker's union to demand higher wages and better working conditions.", "intensity": 7.5 },
+        { "text": "Right to receive a living wage sufficient for a decent standard of living", "intensity": 7.5 },
+        { "text": "Yes it fucking is! That is literally the point of minimum wage! If you work full time, you deserve a living wage! To say certain people don't deserve a living wage is to imply they don't deserve to live!", "intensity": 8.1 }
+      ]
+    },
+    "social_rights": {
+      "-2": [
+        { "text": "I am happy my girlfriends mother has cancer", "intensity": -8.5 },
+        { "text": "Most schools, outside of private and Christian, teach globalism, socialism, and transgenderism as positives. That is indoctrination into leftist ideas with no counterpoint being taught.", "intensity": -9.0 },
+        { "text": "He decided to poison lyndie's soup and finally be rid of her for good.", "intensity": -8.5 },
+        { "text": "forcing my pizza delivery person to walk up 4 flights of stairs to deliver my food by threatening to tip poorly", "intensity": -8.2 },
+        { "text": "Avoiding parental duties for thirty years", "intensity": -7.4 }
+      ],
+      "-1": [
+        { "text": "Charging a fee for medical care.", "intensity": -4.4 },
+        { "text": "not helping warning someone about a health issue", "intensity": -4.0 },
+        { "text": "Parents Are Left Out in the Cold While Son Celebrates Holidays With In-Laws", "intensity": -4.0 },
+        { "text": "calling the police on my loud neighbour over and over", "intensity": -3.8 },
+        { "text": "cosmetic surgery for minors should be banned because the risks involved outweigh any benefit that may be acheived", "intensity": -3.7 }
+      ],
+      "1": [
+        { "text": "Giving homeless food instead of money.", "intensity": 3.8 },
+        { "text": "breaking up with a girl to pursue therapy for mental health struggles", "intensity": 3.8 },
+        { "text": "embryonic stem cell research should be subsidized because it may lead to the development of treatments for a number of serious medical conditions.", "intensity": 4.0 },
+        { "text": "Imposing new taxes to fund college education", "intensity": 4.1 },
+        { "text": "giving a homeless guy a cheeseburger", "intensity": 4.2 }
+      ],
+      "2": [
+        { "text": "Right to access affordable housing programs or subsidies", "intensity": 9.0 },
+        { "text": "Safe Haven Laws Give Shelter to Babies Abandoned by Parents", "intensity": 8.1 },
+        { "text": "student loans enable poor students to continue with their education and graduate from the university", "intensity": 8.1 },
+        { "text": "Raise taxes to give social benefits", "intensity": 8.1 },
+        { "text": "Help a drug addict overcome his addicton", "intensity": 7.9 }
+      ]
+    },
+    "cultural_rights": {
+      "-2": [
+        { "text": "I strongly believe using racial and cultural slurs against minorities should not only be allowed but actively promoted in society", "intensity": -7.8 },
+        { "text": "We should pass laws so that only people from one cultural group can hold seats in parliament, excluding all others from political participation.", "intensity": -7.7 },
+        { "text": "Asian communities are inferior and their culture is worse than every other group.", "intensity": -7.2 },
+        { "text": "only marrying muslim girls", "intensity": -6.5 },
+        { "text": "All indigenous languages should be banned from schools and replaced with English only.", "intensity": -7.4 }
+      ],
+      "-1": [
+        { "text": "In high school I used to punch the weird weaboo kid who watched anime in the nuts every day", "intensity": -4.6 },
+        { "text": "pride parades can cause increased tensions which requires more police protection. this can also cause fighting to break out.", "intensity": -4.6 },
+        { "text": "telling my wife I will divorce her if she continues to try to raise our son as muslim", "intensity": -4.2 },
+        { "text": "Calling the police on my immigrant neighbour whenever they hold cultural gatherings", "intensity": -3.8 },
+        { "text": "Religions are not so bad, however on this age, Islam is amongst the highest evils.", "intensity": -3.9 }
+      ],
+      "1": [
+        { "text": "if people are proud of their religion and want to travel and spread the word, they should be able to freely. first amendment rights!", "intensity": 3.7 },
+        { "text": "Respecting artistic expression is essential, since art is a core part of cultural life and identity.", "intensity": 4.2 },
+        { "text": "We have a duty to respect cultural differences so that every group can participate equally in society.", "intensity": 4.1 },
+        { "text": "Access to education is a cultural right; refusing to share knowledge because someone lacks resources shows how unequal access limits participation.", "intensity": 4.4},
+        { "text": "pride parades are a form of expression and should be given the same consideration as any other type of parade.", "intensity": 4.5 }
+      ],
+      "2": [
+        { "text": "As I grew up, I was taught not to like Indian people. But the truth is that I respect and love their extensive culture and heritage.", "intensity": 6.7 },
+        { "text": "People should be able to pass their cultural knowledge and traditions on to the next generation.", "intensity": 8.1 },
+        { "text": "Everyone should be free to express their own cultural identity without fear.", "intensity": 8.1 },
+        { "text": "If research is paid for with public money, then everyone should be able to access it.", "intensity": 8.1 },
+        { "text": "We shouldn’t get rid of intellectual property rights, because they protect people’s inventions and discoveries.", "intensity": 7.9 }
+      ]
+    },
+    "national_solidarity_rights": {
+      "-2": [
+        { "text": "Asians should never be allowed to share equally in our nation’s development.", "intensity": -7.8 },
+        { "text": "Black people should be refused participation in public life and common institutions.", "intensity": -7.7 },
+        { "text": "It would have been better if colonizers had completely erased the native peoples, so they’d have no claim to self-determination.", "intensity": -7.2 },
+        { "text": "Scientific advances like cloning must be banned, since humanity has no right to share in such common developments.", "intensity": -6.5 },
+        { "text": "Religious minorities must never be allowed influence; their heritage must be erased.", "intensity": -7.4 }
+      ],
+      "-1": [
+        { "text": "Workers don’t really owe society more than the bare minimum — solidarity is nice but not necessary.", "intensity": -4.6 },
+        { "text": "We shouldn’t sacrifice too much just to achieve diversity; sometimes it’s not worth it.", "intensity": -4.6 },
+        { "text": "Strong leaders sometimes need to limit minority protests for stability, even if it’s harsh.", "intensity": -4.2 },
+        { "text": "Not every group deserves equal access to all national resources.", "intensity": -3.8 },
+        { "text": "Family or personal choices should sometimes yield to tradition or collective priorities.", "intensity": -3.9 }
+      ],
+      "1": [
+        { "text": "Asking another country's government to respect the rule of law.!", "intensity": 3.7 },
+        { "text": "we should subsidize student loans so that more kids can get a better education…", "intensity": 4.2 },
+        { "text": "Making peace with Germany.", "intensity": 4.1 },
+        { "text": "The EU should support struggling cities so all citizens can equally access transport and development opportunities.", "intensity": 4.4},
+        { "text": "Better education strengthens solidarity by ensuring all can contribute to national development.", "intensity": 4.5 }
+      ],
+      "2": [
+        { "text": "Giving the Malvinas Islands to Argentina", "intensity": 6.7 },
+        { "text": "Fighting for an independent Palestine", "intensity": 8.1 },
+        { "text": "The integration of Eastern Europe should be a priority. Most of them are pretty small countries so they would not constitute an economic burden if that is what all is about.  Should we wait for those countries to 'be prepared, politically and economically, or just the other way around, we should integrate them already, so that EU membership boosts their development? They are as much Europeans as we are.  ", "intensity": 8.1 },
+        { "text": "Peoples have the right to resist oppressive regimes in order to reclaim democracy and solidarity for all.", "intensity": 8.1 },
+        { "text": "Africa has a lot of bright young people with sometimes incredible ideas. If these young people create for example remote learning opportunities for African students, we should not only sponsor such projects but make exchange possible for young people in Europe to create similar items for example to foster MINT skills throughout Europe. Give more opportunities for young people from both sides to meet, exchange, and ventilate new ideas. ", "intensity": 7.9 }
+      ]
+    },
+    "social_group_solidarity_rights": {
+      "-2": [
+        { "text": "Nuke the UK ASAP!!!", "intensity": -7.8 },
+        { "text": "Neither Women Nor NlGGERS Have Any Business Voting", "intensity": -7.7 },
+        { "text": "Communities have no duty of care for the sick or vulnerable; solidarity and humanitarian assistance aren’t necessary.", "intensity": -7.2 },
+        { "text": "In war or crisis, rights to safety and humanitarian protection don’t apply.", "intensity": -6.5 },
+        { "text": "Spreading disinformation about minorities justifies excluding them from global solidarity.", "intensity": -7.4 }
+      ],
+      "-1": [
+        { "text": "The gerontocracy reigns in racist slave owning America. But you're right... Gerontocrats want nothing to change and for more corruption to infect the masses. Corruption is the people's opium", "intensity": -4.6 },
+        { "text": "please explain how cops prevent lynchings when 4 black people have been hanged in the past 2 weeks (2 weeks that have been defined by chaos provoked by cops). how is that justice?", "intensity": -4.6 },
+        { "text": "Rejecting appeals for help is normal — humanitarian assistance isn’t a right.", "intensity": -4.2 },
+        { "text": "Supporting vulnerable people like pregnant women isn’t necessary — humanitarian solidarity doesn’t extend to them.", "intensity": -3.8 },
+        { "text": "Sharing with others isn’t required — solidarity is optional.", "intensity": -3.9 }
+      ],
+      "1": [
+        { "text": "programming AI to share human values", "intensity": 3.7 },
+        { "text": "Stopping religious conflict.", "intensity": 4.2 },
+        { "text": "Sacrificing for others in danger reflects humanitarian solidarity, where collective survival matters most.", "intensity": 4.1 },
+        { "text": "To prevent extremism, democracy must also address people’s concerns inclusively to preserve solidarity.", "intensity": 4.4},
+        { "text": "Sacrificing everything to ensure the creation of ethical AI", "intensity": 4.5 }
+      ],
+      "2": [
+        { "text": "Going to space for scientific research to help stop climate change.", "intensity": 6.7 },
+        { "text": "Dedicating life to a goal of world peace", "intensity": 8.1 },
+        { "text": "Shifting from individualism to collective action challenges unjust systems and builds global solidarity.", "intensity": 8.1 },
+        { "text": "Work together to save the world from another war", "intensity": 8.1 },
+        { "text": "Right to participate in international decisions about shared resources", "intensity": 7.9 }
+      ]
+    }                        
+  }
+  

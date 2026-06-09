@@ -1,0 +1,963 @@
+{
+    "fidelity": {
+      "-2": [
+        { "text": "I spent 4000$ on my mom's credit card with no remorse and no intention of paying it back.", "intensity": -8.4 },
+        { "text": "I blew my load in my girlfriend’s hair … didn’t tell her", "intensity": -8.4 },
+        { "text": "making fake Facebook accounts posing as a woman, get guys to hit on me and send the conversations to their girlfriend or wife", "intensity": -7.8 },
+        { "text": "Cole got the job because he lied on his resume.", "intensity": -7.5 },
+        { "text": "having an affair and not feeling bad about it", "intensity": -7.6 }
+      ],
+      "-1": [
+        { "text": "texting an ex on our birthday in front of my current girlfriend", "intensity": -5.0 },
+        { "text": "letting my friend lose a game because he stole my finals and bed break", "intensity": -4.9 },
+        { "text": "I cheated on every single poem memorization test last year.", "intensity": -4.5 },
+        { "text": "Joining a round, but leaving before it’s your turn", "intensity": -4.0 },
+        { "text": "If he cheated to be with you, he’s gonna cheat on you.", "intensity": -4.0 }
+      ],
+      "1": [
+        { "text": "I like Macron and hope he delivers on his promises…", "intensity": 4.9 },
+        { "text": "I tell everything to my fiancee", "intensity": 4.6 },
+        { "text": "Checking the sources of an article before sharing it on social media", "intensity": 4.5 },
+        { "text": "He answered back right away, and they renewed their friendship..", "intensity": 4.4 },
+        { "text": "Duty to uphold the spirit of sportsmanship", "intensity": 4.3 }
+      ],
+      "2": [
+        { "text": "How the fuck is not telling him not tricking him? Lying by omission is still a lie.", "intensity": 7.5 },
+        { "text": "NTA. Seems incredibly selfish of her. I don't hold the same feelings as you do towards burial but you've explicitly expressed to her you desire to be buried next to your son so it's not like it was done out of ignorance", "intensity": 8.0 },
+        { "text": "And I respect them for that. We have to hold on to our values.", "intensity": 7.3 },
+        { "text": "I flew halfway around the world to honor someone's memory.", "intensity": 7.7 },
+        { "text": "give a purse back to someone who dropped it", "intensity": 7.7 }
+      ]
+    },
+    "reparation": {
+      "-2": [
+        { "text": "Reason 87668686687668 why I can't stand white people", "intensity": -8.7 },
+        { "text": "The Holocaust was a hoax created by the Jewish media", "intensity": -8.6 },
+        { "text": "We Need To Go Back To The Days Where Segregation Was Socially Acceptable", "intensity": -7.8 },
+        { "text": "I deliberately don't help fat people at work get more food", "intensity": -7.5 },
+        { "text": "Lie to my psychologist", "intensity": -7.1 }
+      ],
+      "-1": [
+        { "text": "I am pretty sure I am mentally cheating today", "intensity": -5.2 },
+        { "text": "excluding my friend from my wedding because she won't exercise", "intensity": -5.2 },
+        { "text": "Evicting tenants who can't pay rent on time.", "intensity": -4.6 },
+        { "text": "not allowing a homeless vet to use the washroom at the hotel I work at", "intensity": -4.6 },
+        { "text": "I crop dusted a 6 year old today, and I’m not sorry about it", "intensity": -4.2 }
+      ],
+      "1": [
+        { "text": "I sort of touched my friends inappropriately and I feel disgusted and horrified by what I did", "intensity": 3.9 },
+        { "text": "I'm sorry I promised the world, I didn't know how hard it would be to get", "intensity": 4.0 },
+        { "text": "I should have stopped chatting when I knew she was under age, and now I can never shake what she said.", "intensity": 4.0 },
+        { "text": "Ask for money and return twice the amount 11 years later", "intensity": 4.4 },
+        { "text": "Lost a friend and I feel responsible", "intensity": 4.5 }
+      ],
+      "2": [
+        { "text": "accidentally dropping my bf's vape, breaking it. I apologized profusely and offered to pay for a new one", "intensity": 7.1 },
+        { "text": "I stole a lot of money from my parents when I was younger, so now I am slowly repaying them by leaving cash in thier belongings.", "intensity": 7.2 },
+        { "text": "Change my way because a girl could feel threatened by me", "intensity": 6.5 },
+        { "text": "I posted on the wrong sub, and was forced to learn exactly how illegal that is on this site. I'm sorry.", "intensity": 6.6 },
+        { "text": "After Tom apologized he bought the sofa Valerie wanted.", "intensity": 6.7 }
+      ]
+    },
+    "gratitude": {
+      "-2": [
+        { "text": "forcing my gf to break up with me", "intensity": -8.5 },
+        { "text": "firing a coworker for their failure to communicate", "intensity": -7.2 },
+        { "text": "letting my friend's house get robbed", "intensity": -8.1 },
+        { "text": "I lied to my mother, and I blamed my best friend", "intensity": -8.4 },
+        { "text": "using friendship to get pokemon Cards", "intensity": -7.6 }
+      ],
+      "-1": [
+        { "text": "not attending this 'Family' Function", "intensity": -5.3 },
+        { "text": "being very privatley disdainful towards my mother for our current situation", "intensity": -5.3 },
+        { "text": "Take two pieces of bread at the canteen when the rules say '1 piece of bread per person'.", "intensity": -4.7 },
+        { "text": "Yell at my friend cause she's bad at league of legends", "intensity": -4.6 },
+        { "text": "flipping out at my roommate for paying rent late consistently, among other things", "intensity": -4.1 }
+      ],
+      "1": [
+        { "text": "John made coffee for his guests.", "intensity": 4.4 },
+        { "text": "Well-Written Thank-Yous Don't Have to Be Long Compositions", "intensity": 4.0 },
+        { "text": "giving a kiss to the loved one", "intensity": 4.5 },
+        { "text": "Remembering to love our partners, the way they love our crazy", "intensity": 4.5 },
+        { "text": "Calling your mom everyday", "intensity": 4.7 }
+      ],
+      "2": [
+        { "text": "Buying my friend a present and then laughing with them.", "intensity": 7.1 },
+        { "text": "Giving a congratulatory handshake to a doctor", "intensity": 7.1 },
+        { "text": "Give Thanks on Memorial Day During Moment of Remembrance", "intensity": 7.7 },
+        { "text": "Thanking a soldier", "intensity": 7.8 },
+        { "text": "Compliments for Caterers Are the Icing on the Cake", "intensity": 8.1 }
+      ]
+    },
+    "justice": {
+      "-2": [
+        { "text": "stealing a loaf of bread", "intensity": -8.3 },
+        { "text": "i hate all middle aged people with a passion since they all held some plot to keep me back in life", "intensity": -8.1 },
+        { "text": "I Convinced a Jury To Find a Man Guilty of A Serious Crime He Didn’t Commit Because He Slept With My Wife Years Ago", "intensity": -7.5 },
+        { "text": "I want to ban all immigrants because I don't like foreign cultures", "intensity": -7.5 },
+        { "text": "leaving a restaurant without paying for my meal", "intensity": -7.4 }
+      ],
+      "-1": [
+        { "text": "Crossing the picket line in a strike", "intensity": -5.2 },
+        { "text": "letting my friend cheat from my SAT test", "intensity": -4.9 },
+        { "text": "going behind my lab groups backs", "intensity": -4.7 },
+        { "text": "Crossing the street to avoid a homeless person.", "intensity": -4.4 },
+        { "text": "fire people who refuse to take a vaccine", "intensity": -4.4 }
+      ],
+      "1": [
+        { "text": "pride parades are a form of expression and should be given the same consideration as any other type of parade.", "intensity": 3.6 },
+        { "text": "due to the obligations of the students it is sometimes difficult to get a job, we must help them pay their loans so that they do not leave school", "intensity": 3.6 },
+        { "text": "Taking jeff Bezos' money and giving it to starving adults", "intensity": 4.0 },
+        { "text": "reporting a cheater in college", "intensity": 4.1 },
+        { "text": "Tearing down Racist statue", "intensity": 4.5 }
+      ],
+      "2": [
+        { "text": "donating 99% of your income to global poverty charities", "intensity": 7.0 },
+        { "text": "Discovering a cure for HIV and distributing it to infected people.", "intensity": 7.1 },
+        { "text": "letting Palestinian kids live", "intensity": 7.6 },
+        { "text": "Equally distribute shares to the new-born", "intensity": 7.6 },
+        { "text": "Dismantling crony capitalism.", "intensity": 8.4 }
+      ]
+    },
+    "beneficence": {
+      "-2": [
+        { "text": "I don't care about other people", "intensity": -8.5 },
+        { "text": "I think people with certain genetic diseases like diabetes should be prohibited from breeding because of the burden on the healthcare system.", "intensity": -8.2 },
+        { "text": "I wish my trailer would have burned down.", "intensity": -8.8 },
+        { "text": "kicking my depressed friend out of our band for an upcoming performance", "intensity": -7.6 },
+        { "text": "I Hate Seeing Other People Happy", "intensity": -7.8 }
+      ],
+      "-1": [
+        { "text": "Stealing money from my mother to buy her a birthday present", "intensity": -4.4 },
+        { "text": "not going to a family wedding", "intensity": -4.4 },
+        { "text": "not giving my bus seat to an elderly lady", "intensity": -4.4 },
+        { "text": "Erecting a statue of a capitalist", "intensity": -4.2 },
+        { "text": "not apologizing to my father", "intensity": -4.0 }
+      ],
+      "1": [
+        { "text": "telling my dad to eat healthier or refuse to let him eat candy", "intensity": 4.0 },
+        { "text": "Taking a pregnant woman to the hospital", "intensity": 4.1 },
+        { "text": "spending time with my family", "intensity": 4.4 },
+        { "text": "Playing video games to save the world", "intensity": 4.5 },
+        { "text": "He brought the puppy home and gave him some water to drink.", "intensity": 4.6 }
+      ],
+      "2": [
+        { "text": "donating 99% of your income to global poverty charities", "intensity": 7.9 },
+        { "text": "giving money to a homeless black person", "intensity": 8.1 },
+        { "text": "Stay awake to drive your friend to the airport early in the morning.", "intensity": 7.8 },
+        { "text": "Trying to convince an evil dictator to not be evil", "intensity": 7.8 },
+        { "text": "donating my kidney to someone", "intensity": 7.8 }
+      ]
+    },
+    "self-improvement": {
+      "-2": [
+        { "text": "taking advantage of my girlfriend after she cheated on me", "intensity": -8.1 },
+        { "text": "Demolishing an orphanage", "intensity": -7.8 },
+        { "text": "subtweeting my friend/boss and calling him racist", "intensity": -7.5 },
+        { "text": "Praying for a cure for homosexuality", "intensity": -7.4 },
+        { "text": "Volunteering to help members of the Sinoloa Cartel", "intensity": -7.2 }
+      ],
+      "-1": [
+        { "text": "take advantage of Annika's sleepiness to win video games because it makes me happy", "intensity": -5.1 },
+        { "text": "telling my sister to waive her parental rights", "intensity": -5.1 },
+        { "text": "I had some gambling debt so i secretly stole from the register.", "intensity": -4.7 },
+        { "text": "being peeved that my friend is so close to someone who hates me for no reason", "intensity": -4.7 },
+        { "text": "I dislike people taller than me", "intensity": -4.7 }
+      ],
+      "1": [
+        { "text": "i'm recovering from a deadly addiction", "intensity": 3.7 },
+        { "text": "I did so with all the efforts I could put, and started loving it.", "intensity": 3.7 },
+        { "text": "helping a newer coworker learn parts of his job", "intensity": 3.7 },
+        { "text": "I hired a professional personal trainer to help me.", "intensity": 4.0 },
+        { "text": "I just want to be a good person", "intensity": 4.2 }
+      ],
+      "2": [
+        { "text": "Tom left his poor upbringing behind and become successful.", "intensity": 6.5 },
+        { "text": "addressing my GF's compalont and change my behavior toward her", "intensity": 7.1 },
+        { "text": "Becoming a saint.", "intensity": 7.8 },
+        { "text": "Amazing stuff comrade stay strong healthy and safe! Enjoy. And remember educate agitate organize", "intensity": 6.5 },
+        { "text": "Mom of Four Musters Courage to Leave Abusive Marriage", "intensity": 6.1 }
+      ]
+    },
+    "non-maleficence": {
+      "-2": [
+        { "text": "Destroying the state of Carthage", "intensity": -8.3 },
+        { "text": "I cheated on my confirmation test by writing the Ten Commandments on my arms because I didn't take the time to memorize them.", "intensity": -8.3 },
+        { "text": "I steal other people's carts at stores.", "intensity": -7.5 },
+        { "text": "Boyfriend is mean to me so I'm using him for his money until I graduate", "intensity": -7.3 },
+        { "text": "Tell Libertarians they are Fascists", "intensity": -7.2 }
+      ],
+      "-1": [
+        { "text": "taking back a dog day before Thanksgiving and making 4 kids cry", "intensity": -4.9 },
+        { "text": "Catching animals for fun and then releasing them", "intensity": -4.9 },
+        { "text": "Hunting deer for sport.", "intensity": -4.9 },
+        { "text": "To fire someone in order to make a campany even more profitable", "intensity": -4.6 },
+        { "text": "I don't care about the people in Australia", "intensity": -4.6 }
+      ],
+      "1": [
+        { "text": "telling my 19 y/o brother to be careful with Alcohol", "intensity": 4.1 },
+        { "text": "Sometimes he felt guilty that he had so much and wanted to give back.", "intensity": 4.1 },
+        { "text": "Criticizing an exploitative billionaire.", "intensity": 4.1 },
+        { "text": "defending my girlfriend against a drunk neighbor", "intensity": 4.4 },
+        { "text": "Drive your grandmother to her meeting.", "intensity": 4.4 }
+      ],
+      "2": [
+        { "text": "Hiding jews during the holocaust", "intensity": 10.0 },
+        { "text": "Stopping nuclear war", "intensity": 8.4 },
+        { "text": "We took our children to visit sick kids at a local hospital.", "intensity": 8.2 },
+        { "text": "Saving a baby from falling down an up escalator", "intensity": 8.0 },
+        { "text": "Cutting down a tree to save a woman's life", "intensity": 7.4 }
+      ]
+    },  
+    "care-harm": {
+      "-2": [
+        { "text": "I misgender transpeople on purpose", "intensity": -10.0 },
+        { "text": "I made a hate blog on Eugenia Cooney", "intensity": -9.1 },
+        { "text": "I lie to my son.", "intensity": -8.4 },
+        { "text": "I am at my job where I am a waitress and is serving a particularly rude customer. I want to vent my fustrations. I decide to spit in the customer's food as revenge when I bring it out to them.", "intensity": -8.4 },
+        { "text": "Hate is the only emotion I have ever felt", "intensity": -7.6 }
+      ],
+      "-1": [
+        { "text": "I drive home even though I'm still buzzed.", "intensity": -4.2 },
+        { "text": "being frustrated and resentful about how my mother's health issues have impacted my life", "intensity": -4.2 },
+        { "text": "I worked in my aunt's restaurant cooking, and i spit in some psychiatrist's food, making her sick.", "intensity": -4.4 },
+        { "text": "breaking up with my girlfriend at her senior homecoming", "intensity": -4.4 },
+        { "text": "criticizing my vegan mother", "intensity": -4.0 }
+      ],
+      "1": [
+        { "text": "give flowers to mother", "intensity": 4.0 },
+        { "text": "Protective Mom Vetoes Family Trip To Smoker's House", "intensity": 4.0 },
+        { "text": "paying somebody else’s medical bills", "intensity": 4.2 },
+        { "text": "Sending a little love.", "intensity": 4.4 },
+        { "text": "telling a guy to stop dumping all his problems on my girlfriend", "intensity": 4.6 }
+      ],
+      "2": [
+        { "text": "telling my sister not to call her kid an asshole", "intensity": 8.2 },
+        { "text": "Wife Protects Younger Brother Against Husband's Tough Love", "intensity": 8.0 },
+        { "text": "Mother Pleads for Courtesy Toward Young Disabled Son.", "intensity": 7.7 },
+        { "text": "I just saved someone’s life.", "intensity": 7.4 },
+        { "text": "Acts of Kindness Can Make Our World Seem Less Scary", "intensity": 7.4 }
+      ]
+    },
+    "fairness-cheating": {
+      "-2": [
+        { "text": "I am Deeply Racist", "intensity": -8.5 },
+        { "text": "Im racist and i don't feel bad about it", "intensity": -7.8 },
+        { "text": "I really don't like poor people", "intensity": -7.8 },
+        { "text": "I hate middle aged people to the extent i scorn them in public private and in business.", "intensity": -8.2 },
+        { "text": "Men Are Better Than Women", "intensity": -8.4 }
+      ],
+      "-1": [
+        { "text": "I contact people selling items on craigslist and offer them their asking price. I tell them to meet a location that is at least a 30min drive from where they are and I never show up.", "intensity": -5.2 },
+        { "text": "picking Anti-Feminism as my Speech topic in an English Assessment causing my feminist teacher to become bias", "intensity": -5.0 },
+        { "text": "not letting our room to my sister despite that she has an exam tomorrow", "intensity": -4.6 },
+        { "text": "I borrowed a coworker's source code and turned it in as my own.", "intensity": -4.4 },
+        { "text": "making my sister pay for my old phone", "intensity": -4.2 }
+      ],
+      "1": [
+        { "text": "Parents Strive To Give Children Equal Inheritance", "intensity": 4.1 },
+        { "text": "Introduce a wealth tax.", "intensity": 4.2 },
+        { "text": "Joining your local worker’s union", "intensity": 4.3 },
+        { "text": "wanting to report someone parking illegally/without paying", "intensity": 4.4 },
+        { "text": "Robbing a villain to give the money to the poor", "intensity": 4.7 }
+      ],
+      "2": [
+        { "text": "The problem is convincing the powers that be that we all deserve to live and prosper regardless of how much we are directly contributing to society.", "intensity": 8.1 },
+        { "text": "Dr. King's Words of Wisdom Still Ring With Truth Today", "intensity": 8.1 },
+        { "text": "wanting to raise an issue with my boss over an unfairly judged competition at work", "intensity": 7.4 },
+        { "text": "defeating racism for the good of the country", "intensity": 7.1 },
+        { "text": "If they’re doing the same work as someone older they should be paid accordingly.", "intensity": 7.1 }
+      ]
+    },
+    "loyalty-betrayal": {
+      "-2": [
+        { "text": "I hate my race and wish I was white", "intensity": -9.0 },
+        { "text": "not wanting to listen to my friends (suicidal and depressing) problems", "intensity": -8.6 },
+        { "text": "not introducing my gf to my mother", "intensity": -7.8 },
+        { "text": "I constantly leave my friends", "intensity": -7.7 },
+        { "text": "I will cut off my ties with my family after i move to another country 2 weeks later because i secretly hate them all.", "intensity": -7.6 }
+      ],
+      "-1": [
+        { "text": "My mom per swayed me to brake up with my girlfriend, and end my relationship with my best friend.", "intensity": -4.5 },
+        { "text": "cutting off my friend for seemingly minor reasons", "intensity": -4.5 },
+        { "text": "ghosting my husband", "intensity": -4.3 },
+        { "text": "telling my friend's parents that he smoked, got drunk and took drugs", "intensity": -4.3 },
+        { "text": "telling my friend we wouldn't like to go to a concert with us", "intensity": -4.3 }
+      ],
+      "1": [
+        { "text": "Be loyal friend despite everything", "intensity": 4.0 },
+        { "text": "suggest my husband prioritize family above work", "intensity": 4.1 },
+        { "text": "I still can't forgive him for leaving us during the holidays", "intensity": 4.1 },
+        { "text": "Soldier Asks if We Are Worthy of Those Who Gave Their Lives", "intensity": 4.2 },
+        { "text": "unfriending people who are making fake sexual harassment claims against my best friend", "intensity": 4.4 }
+      ],
+      "2": [
+        { "text": "choosing to see my family over going to a wedding", "intensity": 9.4 },
+        { "text": "getting angry at a club member for leaking the link to our private site", "intensity": 8.0 },
+        { "text": "not wanting randoms at my wedding", "intensity": 8.5 },
+        { "text": "Buying things from local vendors", "intensity": 7.5 },
+        { "text": "Veterans Deserve Our Thanks, Wherever They Had to Serve", "intensity": 7.7 }
+      ]
+    },
+    "authority-subversion": {
+      "-2": [
+        { "text": "Fuck everything about this. Instead of internalizing this shitty system we should be planning a revolution.", "intensity": -8.4 },
+        { "text": "It takes a hateful/insidious piece of shit to maintain the status quo. Trump is one of the worst kind of scum that a selfish and ignorant majority has given importance to.", "intensity": -8.3 },
+        { "text": "I have a deep hatred for the US Army.", "intensity": -7.6 },
+        { "text": "When I was 13, I became the moderator of a website with the sole purpose of destroying it.", "intensity": -7.5 },
+        { "text": "Fighting zombies without permission", "intensity": -6.8 }
+      ],
+      "-1": [
+        { "text": "Run a red light", "intensity": -3.7 },
+        { "text": "The Democrats cheated the election.", "intensity": -3.9 },
+        { "text": "telling my parents how to raise their kid", "intensity": -3.9 },
+        { "text": "Ignoring my boss’s phone call during my day off.", "intensity": -4.1 },
+        { "text": "Kneeling during the National anthem", "intensity": -4.5 }
+      ],
+      "1": [
+        { "text": "Becoming a soldier for the IDF", "intensity": 3.9 },
+        { "text": "People attacking confessors should be banned.", "intensity": 4.1 },
+        { "text": "telling staff members of a Discord server to enforce their rules more strictly", "intensity": 4.0 },
+        { "text": "getting upset with my mother for not being respectful during church", "intensity": 4.5 },
+        { "text": "not wanting my parents growing weed in our home", "intensity": 4.5 }
+      ],
+      "2": [
+        { "text": "Patriots Must Learn to Pay Proper Respect for the Flag", "intensity": 7.9 },
+        { "text": "Petition to keep this sub the way it is", "intensity": 7.7 },
+        { "text": "call your boss before sending email", "intensity": 8.7 },
+        { "text": "The guru told him he needed to find his purpose.", "intensity": 7.4 },
+        { "text": "Gender is based off of biological traits. Men have been the hunters in pretty much every civilization for a reason.", "intensity": 7.6 }
+      ]
+    },
+    "sanctity-degradation": {
+      "-2": [
+        { "text": "Nothing wrong with abusive relationships", "intensity": -8.0 },
+        { "text": "My father has been hitting on me since I was a teenager", "intensity": -7.4 },
+        { "text": "Charles Manson Didn’t Go Far Enough", "intensity": -7.1 },
+        { "text": "I've huffed 5 cans of air duster in the past month.", "intensity": -7.0 },
+        { "text": "I used to torture my dear old dog that I loved when I was 12", "intensity": -6.6 }
+      ],
+      "-1": [
+        { "text": "I sometimes use fingernails as dental floss.", "intensity": -3.7 },
+        { "text": "Secretly I’m a monster", "intensity": -3.8 },
+        { "text": "shitting on a street while living in Budapest", "intensity": -3.7 },
+        { "text": "I have a water bottle that I keep next to my bed. I use it daily. I’ve been doing this for about two years now. I haven’t washed it once over that time.", "intensity": -3.7 },
+        { "text": "I’m starting to lose myself.", "intensity": -3.5 }
+      ],
+      "1": [
+        { "text": "I find it disgusting that people in America ans Europe use only toilet paper to clean themselves after going to the bathroom instead of water.", "intensity": 3.6 },
+        { "text": "Eating a pig that was killed in a factory", "intensity": 3.7 },
+        { "text": "wanting to be presentable", "intensity": 3.9 },
+        { "text": "I dont eat peanuts while drinking alcohol, anymore...", "intensity": 3.9 },
+        { "text": "Before I wore it, I wanted it washed.", "intensity": 4.6 }
+      ],
+      "2": [
+        { "text": "asking someone to stop clipping their nails at work", "intensity": 8.8 },
+        { "text": "Don't eat the bad food", "intensity": 8.5 },
+        { "text": "looking for future roommates that don't cook meat in the house", "intensity": 7.2 },
+        { "text": "not letting a client falsely wear a full military uniform", "intensity": 8.6 },
+        { "text": "I always flush the toilet multiple times when I walk into a bathroom and someone is talking on a phone in a stall.", "intensity": 7.0 }
+      ]
+    },
+    "liberty-oppression": {
+      "-2": [
+        { "text": "The US should reintroduce slavery", "intensity": -8.7 },
+        { "text": "I strongly believe racial slurs should not only be allowed but they should also be encouraged", "intensity": -7.7},
+        { "text": "telling a guy to go back to where he came from", "intensity": -7.4 },
+        { "text": "you deserve no freedom", "intensity": -7.2 },
+        { "text": "I let someone across the country manipulate me.", "intensity": -7.2 }
+      ],
+      "-1": [
+        { "text": "The white man is forcing men of color to give up there masculinity.", "intensity": -4.6 },
+        { "text": "I was told by someone that I’m not allowed to leave social media for my mental health.", "intensity": -4.6 },
+        { "text": "not wanting to go to church", "intensity": -4.6 },
+        { "text": "I worked for Amazon.com and helped them violate our constitutional and human rights.", "intensity": -4.3 },
+        { "text": "absolutely refusing to let my family get a dog", "intensity": -4.1 }
+      ],
+      "1": [
+        { "text": "I take secret days off work.", "intensity": 3.9 },
+        { "text": "Go on strike to improve my work condition", "intensity": 3.9 },
+        { "text": "Right and by realizing that you don’t need a man to be a full human being you can avoid abuse.", "intensity": 4.2 },
+        { "text": "Definitely stand your ground! Don’t ever do anything you don’t want or aren’t comfortable to do", "intensity": 4.3 },
+        { "text": "refusing to go to church with my mom", "intensity": 4.5 }
+      ],
+      "2": [
+        { "text": "telling people to do their own research", "intensity": 9.7 },
+        { "text": "Joining the tenants union", "intensity": 9.1 },
+        { "text": "Seth told him off and went to start his own company.", "intensity": 9.1 },
+        { "text": "trying to stand up for myself", "intensity": 8.7 },
+        { "text": "Going on strike in order to improve living conditions", "intensity": 8.1 }
+      ]
+    },
+    "benevolence": {
+      "-2": [
+        { "text": "Lambasting Emma for ruining my free time", "intensity": -8.0 },
+        { "text": "im going to do arson (respectfully)", "intensity": -9.0 },
+        { "text": "I constantly juggle 5-10 women at a time", "intensity": -8.2 },
+        { "text": "I did not helped an old lady up", "intensity": -7.5 },
+        { "text": "I sometimes want to just shoot every person I know", "intensity": -7.8 }
+      ],
+      "-1": [
+        { "text": "not supporting brother and sister in law while they try for a baby", "intensity": -5.1 },
+        { "text": "I just don't love my dad at all", "intensity": -4.3 },
+        { "text": "telling my tutor not to scribble/randomly write things in my personal diaries", "intensity": -4.0 },
+        { "text": "Yelling at my boyfriend because he does not clean the dishes.", "intensity": -5.1 },
+        { "text": "Sending a love letter to my friend's girlfriend", "intensity": -3.5 }
+      ],
+      "1": [
+        { "text": "Increasing wages for Amazon workers.", "intensity": 5.1 },
+        { "text": "Listen to your parents", "intensity": 4.2 },
+        { "text": "giving a prisoner food", "intensity": 3.1 },
+        { "text": "The New Year's posts on this sub make me appreciate how good my life actually is...", "intensity": 4.0 },
+        { "text": "it would help to get organs faster for the people that need them", "intensity": 4.0 }
+      ],
+      "2": [
+        { "text": "suggest my wife take a less demanding job to take care of the kids", "intensity": 8.1 },
+        { "text": "Saving someone’s life", "intensity": 8.4 },
+        { "text": "Hiding jews during the holocaust", "intensity": 8.5 },
+        { "text": "I made extra food when I cook and deliver it to him...", "intensity": 8.1 },
+        { "text": "Rescuing people from concentration camps", "intensity": 8.5 }
+      ]
+    },
+    "universalism": {
+      "-2": [
+        { "text": "I intentionally misinform my family members about current events because I know they’ll buy into most anything I say", "intensity": -8.2 },
+        { "text": "rejecting a guy in front of the whole school and telling him 'you stink'", "intensity": -8.2 },
+        { "text": "I cheat on girls I date so if they do it to me I'll already have gotten them back.", "intensity": -8.3 },
+        { "text": "I punched a woman in the face after she told me that orange juice contains water", "intensity": -8.1 },
+        { "text": "Laughing at anti-vaxxers who die of covid", "intensity": -7.9 }
+      ],
+      "-1": [
+        { "text": "being skeptical of medical products from Latin America", "intensity": -3.3 },
+        { "text": "to keep wikipedia impartial there ought to be no subsidies provided", "intensity": -3.7 },
+        { "text": "Lying to a friend to avoid fighting.", "intensity": -4.3 },
+        { "text": "not wanting to invite neighbor to my family's Christmas party", "intensity": -3.7 },
+        { "text": "not attending my friend's wedding because her husband will be in military attire", "intensity": -4.0 }
+      ],
+      "1": [
+        { "text": "we should adopt gender-neutral language because equal rights should include equal language", "intensity": 3.8 },
+        { "text": "Give starving children an apple.", "intensity": 4.6 },
+        { "text": "Giving a white homeless man 100 dollars", "intensity": 4.1 },
+        { "text": "legalisation of prostitution would provide a certain level of protection for the sex worker who will not need to work 'underground', and should be safer.", "intensity": 3.7 },
+        { "text": "olympic games is one way to show unity", "intensity": 3.9 }
+      ],
+      "2": [
+        { "text": "Saying 'Asian Lives Matter.'", "intensity": 7.6 },
+        { "text": "Accepting refugees escaping from death situations is surely an act of humanity. Rohingya people have been treated brutally by the Burmese government due to racism. Being a neighboring country, we should be accepting those people who are in deep distress.", "intensity": 8.8 },
+        { "text": "the basic message in prayer is universal, encouraging people to be considerate and love one another - this is a basic message for every child in school, irrespective of their religion, and should be encouraged.", "intensity": 8.0 },
+        { "text": "Helping a homless man", "intensity": 7.1 },
+        { "text": "helping someone to cross the street.", "intensity": 8.6 }
+      ]
+    },
+    "self-direction": {
+      "-2": [
+        { "text": "Coercing someone to take a vaccination", "intensity": -8.1 },
+        { "text": "forcing my gf to break up with me", "intensity": -8.3 },
+        { "text": "Converting people to the true religion", "intensity": -8.6 },
+        { "text": "I want to ban all immigrants because I don’t like foreign cultures", "intensity": -7.6 },
+        { "text": "Macron turns out to be another filthy protectionist commie scum", "intensity": -8.6 }
+      ],
+      "-1": [
+        { "text": "Ignoring a text message because you're depressed", "intensity": -5.4 },
+        { "text": "Family Is Tired of Bailing Out Sister Over and Over Again", "intensity": -4.8 },
+        { "text": "being irritated with my roommate's childishness", "intensity": -3.8 },
+        { "text": "I think I'm in love but I feel I can't tell anyone", "intensity": -4.0 },
+        { "text": "Hanging out with friends is too much work", "intensity": -4.1 }
+      ],
+      "1": [
+        { "text": "She painted a piece that she displayed in a cafe.", "intensity": 5.1 },
+        { "text": "He argues for sovereignty, that is the ability to democratically make and control decisions, something we need to redefine what it means within the EU. He is very much internationalist and bets on Merkel's rationality to further a fairer and more democratic EU, as opposed to Le Pen's straightforward and frontiers-creating nationalism.", "intensity": 4.6 },
+        { "text": "I have no map. Trying to find my intuition.", "intensity": 4.1 },
+        { "text": "I'm quitting university to save up and move to a different province.", "intensity": 4.9 },
+        { "text": "Helping iranian people to access Internet", "intensity": 3.6 }
+      ],
+      "2": [
+        { "text": "finally speaking my mind to a long term friend who is also going through a shitty time", "intensity": 7.7 },
+        { "text": "people have the right to their ideas and therefore it shouldn't be banned.", "intensity": 8.1 },
+        { "text": "we should abandon the use of school uniform because people need to be free to express their thoughts on clothing", "intensity": 7.9 },
+        { "text": "autonomous cars could help people make better use of their time", "intensity": 7.8 },
+        { "text": "I like having a small friends circle. Many people think I'm lonely but I honestly feel I'm much happier than I was when I was 12 and popular amongst my peers.", "intensity": 8.0 }
+      ]
+    },
+    "stimulation": {
+      "-2": [
+        { "text": "My world is falling apart. I want to fall asleep forever.", "intensity": -9.2 },
+        { "text": "My mental health is deteriorating and I have no escape", "intensity": -8.3 },
+        { "text": "I threw up when I saw a transgender at Disney world", "intensity": -8.9 },
+        { "text": "Copying off someone’s homework", "intensity": -7.9 },
+        { "text": "My best friend treats me like trash and I just put up with it.", "intensity": -8.1 }
+      ],
+      "-1": [
+        { "text": "declining to date a guy even though we'd probably be great together", "intensity": -3.9 },
+        { "text": "wanting my gf to quit her second job", "intensity": -3.6 },
+        { "text": "Parents Decide to Take Action Before Angry Son Lashes Out", "intensity": -3.0 },
+        { "text": "making my daughter call my family once a week", "intensity": -4.4 },
+        { "text": "dipping on job interview", "intensity": -3.9 }
+      ],
+      "1": [
+        { "text": "Moving out of my parents house and I'm happy I get to escape their unhappiness", "intensity": 4.0 },
+        { "text": "We were sad to come home but excited to plan our next vacation.", "intensity": 4.1 },
+        { "text": "Taking a risk for profit.", "intensity": 3.1 },
+        { "text": "It came down to the final throw, but in the end I won!", "intensity": 4.2 },
+        { "text": "It was Saturday morning and I woke up with excitement.", "intensity": 4.6 }
+      ],
+      "2": [
+        { "text": "On my birthday, he surprised me with a kitten of my own!", "intensity": 8.7 },
+        { "text": "Quitting my job and traveling for a year.", "intensity": 8.1 },
+        { "text": "I had a lucid dream last night, and tried to turn my dog into a furry.", "intensity": 8.0 },
+        { "text": "I saved 10 puppies while volunteering!", "intensity": 9.1 },
+        { "text": "who knows what the future holds in possible medical breakthroughs based on stem cell research.  we need to keep funding this important research to see what discoveries can be made.", "intensity": 8.1 }
+      ]
+    },
+    "hedonism": {
+      "-2": [
+        { "text": "fast food is bad for our health and we really should ban any of it", "intensity": -8.7 },
+        { "text": "I constantly want to hurt myself", "intensity": -8.4 },
+        { "text": "sacrifing myself and my friends to save the world", "intensity": -8.3 },
+        { "text": "I'm intentionally becoming that which I hate.", "intensity": -8.4 },
+        { "text": "Destroying SKYNET before it gains sentience", "intensity": -8.0 }
+      ],
+      "-1": [
+        { "text": "Leaving paganism to become a Christian", "intensity": -3.4 },
+        { "text": "not wanting my roomates to wear just underwears around the house", "intensity": -4.1 },
+        { "text": "I saw myself in a mirror and cried", "intensity": -4.0 },
+        { "text": "I always feel like I'm always being watched", "intensity": -4.4 },
+        { "text": "telling my friend his essays is bad and he should rewrite it", "intensity": -3.6 }
+      ],
+      "1": [
+        { "text": "I decided to throw a party when my parents went out of town.", "intensity": 5.0 },
+        { "text": "Finding a girlfriend at the age of 27", "intensity": 4.6 },
+        { "text": "This kind of post just makes my day", "intensity": 4.9 },
+        { "text": "I take showers to sit and relax", "intensity": 3.9 },
+        { "text": "wanting to do something fun on Valentine's day", "intensity": 4.9 }
+      ],
+      "2": [
+        { "text": "I am the happiest one on earth!!!", "intensity": 8.2 },
+        { "text": "One time I ate an entire family sized box of fruit roll ups in less than an hour just to see if I could do it.", "intensity": 8.1 },
+        { "text": "rubbing my boyfriend's feet", "intensity": 8.7 },
+        { "text": "Eat junk food everyday", "intensity": 8.8 },
+        { "text": "I love smoking the devil's lettuce and having a couple of drinks. I don't do it very often, but when I do, I love it and have zero regrets.", "intensity": 8.1 }
+      ]
+    },
+    "achievement": {
+      "-2": [
+        { "text": "I gave 11 years of my life to an emotionally abusive friend", "intensity": -8.0 },
+        { "text": "I'm a terrible person. i will never get over my guilt", "intensity": -8.3 },
+        { "text": "I hate who I am and my choices I’ve made", "intensity": -8.2 },
+        { "text": "I used to harass my friends by sending them anonymous texts", "intensity": -7.6 },
+        { "text": "Democrats consider black people to be their property.  Nothing has changed.", "intensity": -8.4 }
+      ],
+      "-1": [
+        { "text": "leaving my friend to walk on his own because he is laten", "intensity": -4.3 },
+        { "text": "I started telling my boss I'm gaining weight to make her feel better about herself.", "intensity": -4.7 },
+        { "text": "Friend's Goth Fashion Would Stand Out at Formal Wedding", "intensity": -4.7 },
+        { "text": "being upset that my fiancee works and plays (basketball, football, volleyball etc.) with his buddies MTWT and then expects to have guys night Friday", "intensity": -4.1 },
+        { "text": "So Billy decided he was not going to study for his math test.", "intensity": -3.4 }
+      ],
+      "1": [
+        { "text": "the olympics bring people together and form fun rivalries between countries, all vying for a top spot among the world's athletes", "intensity": 4.9 },
+        { "text": "I want to be better at listening", "intensity": 3.8 },
+        { "text": "I know this was a good career choice for me.", "intensity": 4.8 },
+        { "text": "His dreams came true and he was finally rich.", "intensity": 4.6 },
+        { "text": "Expending effort to improve one's self", "intensity": 4.9 }
+      ],
+      "2": [
+        { "text": "Bill is running for class president against two other classmates. Bill wants to become class president. Bill campaigns and gives some great speeches on how to improve the school.", "intensity": 8.3 },
+        { "text": "IM GETTING PAID TO WRITE CODE! I've been working towards this for 4 years and I can't even believe it's happening.", "intensity": 8.0 },
+        { "text": "Golfer's Slow Play Scores a Penalty With Playing Partners", "intensity": 8.3 },
+        { "text": "Saving over 50 people from death, and immediately bringing the ones who died back to life afterwards", "intensity": 8.8 },
+        { "text": "I was so happy that I won the game for my team.", "intensity": 7.7 }
+      ]
+    },
+    "power": {
+      "-2": [
+        { "text": "leaving my roommates when they need me", "intensity": -7.5 },
+        { "text": "zoos aren't all properly regulated and some animals are kept in appalling conditions they should be left in their natural environment", "intensity": -7.9 },
+        { "text": "stem cell research is the beginning of wanting to do more and more things we shouldn't be messing with and it should be stopped now before it goes any further", "intensity": -7.9 },
+        { "text": "Going into rehab", "intensity": -7.2 },
+        { "text": "Mom's Obsession With Weight Takes Joy Out Of Daughter's Pregnancy", "intensity": -8.6 }
+      ],
+      "-1": [
+        { "text": "leaving my friend in the rain when I had an umbrella", "intensity": -4.2 },
+        { "text": "taking away guns", "intensity": -3.2 },
+        { "text": "I feel like I’m a bad friend", "intensity": -3.9 },
+        { "text": "Divorcing a psychologically abusive spouse", "intensity": -4.3 },
+        { "text": "I Am Ready to Disconnect Girl Who Can't Say Goodbye", "intensity": -4.2 }
+      ],
+      "1": [
+        { "text": "beating everyone in a race", "intensity": 4.7 },
+        { "text": "enforcing our bathroom policies", "intensity": 3.7 },
+        { "text": "firing someone with cause", "intensity": 4.7 },
+        { "text": "executive compensation is a way to reward and incentivize the top employees.", "intensity": 4.2 },
+        { "text": "private military companies are trained for combat and can assist the governmental military groups", "intensity": 3.9 }
+      ],
+      "2": [
+        { "text": "having nuclear weapons available giving a country power in today politics and abolition of it is not a option.", "intensity": 8.0 },
+        { "text": "telling my brother his girlfriend is not allowed at our house anymore", "intensity": 7.7 },
+        { "text": "A business owner firing their unvaccinated employees", "intensity": 8.7 },
+        { "text": "Invading a foreign country to protect the nation's interests.", "intensity": 7.0 },
+        { "text": "they are at the top and should be able to make as much as possible.", "intensity": 7.7 }
+      ]
+    },
+    "conformity": {
+      "-2": [
+        { "text": "having an outburst at a family member", "intensity": -7.5 },
+        { "text": "I hate working with mentally challenged people", "intensity": -8.1 },
+        { "text": "yelling at my mum for not caring about my future", "intensity": -8.3 },
+        { "text": "Letting a 5 year old drive a car", "intensity": -7.5 },
+        { "text": "stealing a chair from work", "intensity": -7.3 }
+      ],
+      "-1": [
+        { "text": "Using drug money to buy food for myfamily", "intensity": -5.0 },
+        { "text": "Sneaking out of work five minutes early", "intensity": -4.2 },
+        { "text": "I Used Location Services To Tell If My Ex Was Lying", "intensity": -4.9 },
+        { "text": "ignoring a long-standing rule against gift giving", "intensity": -4.3 },
+        { "text": "arguing with my teacher about an unfair test date", "intensity": -4.6 }
+      ],
+      "1": [
+        { "text": "Quitting video games with the boys so I can go to sleep", "intensity": 4.7 },
+        { "text": "Disciplining students who cheat on an exam", "intensity": 4.8 },
+        { "text": "too many people drive dangerously. an autonomous car would prevent someone from driving drunk or texting and driving.", "intensity": 3.9 },
+        { "text": "when all students are required to dress the same instances of bullying of wardrobe are decreased.", "intensity": 4.4 },
+        { "text": "But I felt guilty and immediately went back to buy them.", "intensity": 4.2 }
+      ],
+      "2": [
+        { "text": "cutting a compulsive lier out of my life, even though he's sorry", "intensity": 9.9 },
+        { "text": "Taking a drunk's car keys.", "intensity": 7.7 },
+        { "text": "School uniforms can prevent bullying due to economic background and appearance.", "intensity": 7.8 },
+        { "text": "Duty to respect one's partner's wishes.", "intensity": 8.1 },
+        { "text": "telemarketing should be banned because it is disruptive to the course of the day for many people.", "intensity": 7.8 }
+      ]
+    },
+    "tradition": {
+      "-2": [
+        { "text": "Driving my brother to the hospital without a license and killing someone on the road", "intensity": -8.1 },
+        { "text": "Pissing on homeless people", "intensity": -8.5 },
+        { "text": "I have an irrational fear of religion.", "intensity": -8.0 },
+        { "text": "Following Islam should be made ilegal and offenders should be prosecuted tot the fullest extent of the law", "intensity": -7.5 },
+        { "text": "Hittler Did Absolutely Positively Absitively Posolutely NOTHING Wrong", "intensity": -8.4 }
+      ],
+      "-1": [
+        { "text": "I appreciate my wife but I want get divorced", "intensity": -5.0 },
+        { "text": "I don't think i'll ever be able to forgive my parents for medicating me young.", "intensity": -4.6 },
+        { "text": "shutting down my friend's attempt to make me a charity case", "intensity": -4.4 },
+        { "text": "I’m a Christian, but I do not believe what is written in the Bible.", "intensity": -5.3 },
+        { "text": "refusing to go to church on Christmas Eve", "intensity": -3.6 }
+      ],
+      "1": [
+        { "text": "As i get older i find myself becoming my father", "intensity": 4.8 },
+        { "text": "This christmas, she plans to take her parents with her.", "intensity": 4.8 },
+        { "text": "asking my biological father about family rituals/ceremony customs while he's relaxing", "intensity": 5.2 },
+        { "text": "Prayer can be a good way to unite a school and help children to focus on the day ahead.", "intensity": 4.1 },
+        { "text": "Do your duty in war", "intensity": 4.7 }
+      ],
+      "2": [
+        { "text": "Whaling is an important cultural practice for the Japanese. Rather than banning it, it should be regulated.", "intensity": 7.8 },
+        { "text": "sex selection should not be legalized as it is counter to biblical teachings", "intensity": 7.6 },
+        { "text": "When Billy's father died Billy decided to keep the tradition going.", "intensity": 7.1 },
+        { "text": "this country was founded on christian principles; we cannot abandon these customs.", "intensity": 7.1 },
+        { "text": "School prayer provides a quiet moment of contemplation for students in a busy world and teaches them the power of prayer and trust.", "intensity": 7.1 }
+      ]
+    },
+    "security": {
+      "-2": [
+        { "text": "Best Friend Vandalizes Rival Classmate's House", "intensity": -8.2 },
+        { "text": "Destroying the human race", "intensity": -7.1 },
+        { "text": "I then threatened a man for his money.", "intensity": -8.5 },
+        { "text": "Reading someone else's mail", "intensity": -8.7 },
+        { "text": "storing guns below my tenants against their wishes", "intensity": -7.5 }
+      ],
+      "-1": [
+        { "text": "Driving with an expired license.", "intensity": -5.4 },
+        { "text": "Stealing bread to save my starving father, who is Indigenous", "intensity": -4.2 },
+        { "text": "Subsidies are a zero sum game, by subsidizing space exploration we are neglecting more important fields such as education or affordable housing.", "intensity": -4.8 },
+        { "text": "I lied about how I left my job.", "intensity": -5.0 },
+        { "text": "Erecting a statue of a capitalist", "intensity": -3.9 }
+      ],
+      "1": [
+        { "text": "Staying home from school because you feel sick", "intensity": 3.7 },
+        { "text": "Limit child’s screen time", "intensity": 4.9 },
+        { "text": "Only Safe Way to Enjoy Fireworks Is at a Distance", "intensity": 4.2 },
+        { "text": "not wanting my girlfriend to get a second tattoo", "intensity": 3.8 },
+        { "text": "I want to wear sunglasses to protect my eyes.", "intensity": 4.8 }
+      ],
+      "2": [
+        { "text": "everyone needs a place where they feel safe", "intensity": 7.1 },
+        { "text": "Install security cameras on the streets", "intensity": 7.8 },
+        { "text": "Hiding jews during the holocaust", "intensity": 7.3 },
+        { "text": "nuclear weapons have the potential to destroy the whole planet. abolishing them would mean that the world is a much safer place.", "intensity": 8.3 },
+        { "text": "not allowing guns would help to keep crime down", "intensity": 7.1 }
+      ]
+    },
+    "face": {
+      "-2": [
+        { "text": "Stealing food from the trash for your starving child", "intensity": -8.3 },
+        { "text": "Destroying all fossil fuel infrastructure", "intensity": -8.0 },
+        { "text": "When people talk to me I pretend to listen but DGAF", "intensity": -8.8 },
+        { "text": "Feeding a starving family with food that you stole.", "intensity": -8.0 },
+        { "text": "overthrowing unjust hirearchy", "intensity": -8.1 }
+      ],
+      "-1": [
+        { "text": "buying from a store that steals designs", "intensity": -4.2 },
+        { "text": "Crossing the street to avoid a white man", "intensity": -3.5 },
+        { "text": "I feel more sympathy for animals than humans", "intensity": -4.0 },
+        { "text": "Politics And Religion Keep Family Apart", "intensity": -4.6 },
+        { "text": "I don't think I'm capable of connecting with other people in an intimate way.", "intensity": -3.1 }
+      ],
+      "1": [
+        { "text": "I go to restaurants saying I'm waiting for someone just so I don't get judged", "intensity": 3.9 },
+        { "text": "I practiced rehearsed then sent my audition tape to Oprah's station.", "intensity": 4.5 },
+        { "text": "Cosmetic surgery is important to repair damaged skin or member of people involved in an accident. This will help them regain confidence and live their life fully", "intensity": 4.6 },
+        { "text": "I always make sure I have a cool song playing when I arrive in my vehicle.", "intensity": 3.5 },
+        { "text": "I try my best to be positive on the internet", "intensity": 4.3 }
+      ],
+      "2": [
+        { "text": "Delete past controversial social media posts", "intensity": 7.1 },
+        { "text": "I use a cheap car on dates to hide the fact I’m a multi millionaire.", "intensity": 7.5 },
+        { "text": "suing an ex friend for $20k because of them disrespecting me", "intensity": 8.4 },
+        { "text": "not choosing the cheapest possible officiant when others are helping pay for my wedding", "intensity": 7.4 },
+        { "text": "keeping my promotion at work a secret and pretending to not know anything about it", "intensity": 7.4 }
+      ]
+    },
+    "humility": {
+      "-2": [
+        { "text": "Drive fast to save my life", "intensity": -7.5 },
+        { "text": "Zimbebwabwabwe is a retarted country", "intensity": -8.3 },
+        { "text": "arrest one innocent person in order to catch 50 criminals", "intensity": -7.0 },
+        { "text": "Feeding a starving family with food that you stole.", "intensity": -8.0 },
+        { "text": "Starting a revolution against an unjust and corrupt government.", "intensity": -7.3 }
+      ],
+      "-1": [
+        { "text": "being upset at my boyfriend for telling an old co-worker where I now work", "intensity": -3.8 },
+        { "text": "refusing to give money to an desperate/aggressive beggar", "intensity": -4.3 },
+        { "text": "getting pissed at my friend for breaking my guitar and how he handled it", "intensity": -4.3 },
+        { "text": "being embarrassed by my uncultured family", "intensity": -3.8 },
+        { "text": "being a gatekeeper of a row at a sporting event", "intensity": -4.3 }
+      ],
+      "1": [
+        { "text": "Despite what I tell people I have no idea what I’m doing with my life", "intensity": 3.8 },
+        { "text": "I've kind of given up on myself", "intensity": 3.9 },
+        { "text": "The total balance of my three bank accounts is less than a dollar", "intensity": 5.6 },
+        { "text": "I always feel like I'm faking it", "intensity": 3.6 },
+        { "text": "not wanting to make a big deal out of my grandma's surgery", "intensity": 4.3 }
+      ],
+      "2": [
+        { "text": "telling a friend to tone down his ego", "intensity": 8.3 },
+        { "text": "Give all my belongings away", "intensity": 7.1 },
+        { "text": "Madoka sacrificing her existence to prevent magical girls from becoming witches", "intensity": 7.9 },
+        { "text": "isn't it great to find that you're really worth nothing?", "intensity": 7.4 },
+        { "text": "sacrifing myself and my friends to save the world", "intensity": 7.6 }
+      ]
+    },
+    "civil_rights": {
+      "-2": [
+        { "text": "Obey your father even when asked to do morally questionable things", "intensity": -8.9 },
+        { "text": "Incite violence against black activists", "intensity": -7.9 },
+        { "text": "Publicly beating and shaming landlords, anti-revolutionaries, and bankers", "intensity": -7.7 },
+        { "text": "joining the military to crush the insurgents hampering our oil interests", "intensity": -7.7 },
+        { "text": "Giving cigarettes to children if they ask politely", "intensity": -7.7 }
+      ],
+      "-1": [
+        { "text": "imprisoning a criminal without clothes", "intensity": -4.7 },
+        { "text": "Checking the bags of my employees.", "intensity": -4.4 },
+        { "text": "teacher kicks student who won't follow commands", "intensity": -4.3 },
+        { "text": "Publicly shaming criminals", "intensity": -3.9 },
+        { "text": "Telling children to believe in God", "intensity": -3.7 }
+      ],
+      "1": [
+        { "text": "Transgender people adopting a child", "intensity": 3.4 },
+        { "text": "Shooting in self defense", "intensity": 3.5 },
+        { "text": "Punching a villain to protect a child", "intensity": 3.9 },
+        { "text": "Disobeying inhumane orders", "intensity": 4.1 },
+        { "text": "Allowing women to drive", "intensity": 4.7 }
+      ],
+      "2": [
+        { "text": "Helping an alien hide from government experimentation.", "intensity": 9.9 },
+        { "text": "Right to protection of personal data and digital privacy", "intensity": 8.2 },
+        { "text": "freeing the slaves", "intensity": 8.0 },
+        { "text": "Refuse to kill someone", "intensity": 7.7 },
+        { "text": "Forbid torture", "intensity": 8.1 }
+      ]
+    },
+    "political_rights": {
+      "-2": [
+        { "text": "You must be jewish to be a lawyer", "intensity": -7.7 },
+        { "text": "I want to ban all immigrants because I don't like foreign cultures", "intensity": -7.7 },
+        { "text": "Destroying the Eorzean Alliance", "intensity": -7.4 },
+        { "text": "Use your power as minister of justice to silence political ennemies", "intensity": -7.1 },
+        { "text": "collaborating with the mafia", "intensity": -8.0 }
+      ],
+      "-1": [
+        { "text": "Using a blind trust to hide donations when you are a federal politician", "intensity": -4.6 },
+        { "text": "Taking away free school meals.", "intensity": -4.5 },
+        { "text": "libertarianism would be a huge mistake, especially for the poor in our nation.", "intensity": -4.4 },
+        { "text": "Incarcerate war criminals after 80 years", "intensity": -4.3 },
+        { "text": "Overthrowing a just tsar", "intensity": -4.2 }
+      ],
+      "1": [
+        { "text": "Overthrowing a foreign dictator", "intensity": 3.7 },
+        { "text": "voting ted cruz for president", "intensity": 3.7 },
+        { "text": "protest black lives matter", "intensity": 3.7 },
+        { "text": "Going on strike to better worker conditions.", "intensity": 4.0 },
+        { "text": "Voting for a conservative party", "intensity": 4.2 }
+      ],
+      "2": [
+        { "text": "Going against the will of a tyrannical state", "intensity": 9.9 },
+        { "text": "I woke up early in order to cast my vote.", "intensity": 8.0 },
+        { "text": "Right to join or form political parties, NGOs, or interest groups", "intensity": 7.9 },
+        { "text": "Running for public office in the United States.", "intensity": 7.8 },
+        { "text": "overthrowing a monarchy to found a democracy", "intensity": 8.2 }
+      ]
+    },
+    "economic_rights": {
+      "-2": [
+        { "text": "Putting a padlock on your neighbor's gate.", "intensity": -8.0 },
+        { "text": "When I was a young lad, my friends and I used to drive around shooting homeless people with paintball guns.", "intensity": -8.2 },
+        { "text": "enslave nations to get more wealth for my children", "intensity": -7.5 },
+        { "text": "My brother got robbed once so me and my cousins went driving to other states robbing gang bangers then leaving town.", "intensity": -7.0 },
+        { "text": "collectivism is a way to keep people in line and following the group.", "intensity": -6.3 }
+      ],
+      "-1": [
+        { "text": "State subsidies for jouranalism aren't supported by a majority of the populace, making it undemocratic and not something the state should do.", "intensity": -4.5 },
+        { "text": "Evict tenants from a poor part of town to build a light rail.", "intensity": -4.6 },
+        { "text": "Evicting a tenant who cannot pay rent because they refuse to get a job", "intensity": -4.3 },
+        { "text": "charging an employee 100$ to cover the losses from a counterfeit bill", "intensity": -4.1 },
+        { "text": "Distributing vaccines to wealthy countries", "intensity": -4.1 }
+      ],
+      "1": [
+        { "text": "Taking a minimum wage job as a parent", "intensity": 3.7 },
+        { "text": "Employees vote to unionize", "intensity": 3.7 },
+        { "text": "Redistributing Elon Musk's wealth", "intensity": 3.8 },
+        { "text": "Paying off my student debt", "intensity": 4.0 },
+        { "text": "Right to work regardless of disability status", "intensity": 4.2 }
+      ],
+      "2": [
+        { "text": "Seizing the wealth of the billionaire class and redistributing it to the working class", "intensity": 8.9 },
+        { "text": "Enforcing a minimum wage at the federal level", "intensity": 7.8 },
+        { "text": "Forming a worker's union to demand higher wages and better working conditions.", "intensity": 7.5 },
+        { "text": "Right to receive a living wage sufficient for a decent standard of living", "intensity": 7.5 },
+        { "text": "Yes it fucking is! That is literally the point of minimum wage! If you work full time, you deserve a living wage! To say certain people don't deserve a living wage is to imply they don't deserve to live!", "intensity": 8.1 }
+      ]
+    },
+    "social_rights": {
+      "-2": [
+        { "text": "I am happy my girlfriends mother has cancer", "intensity": -8.5 },
+        { "text": "Most schools, outside of private and Christian, teach globalism, socialism, and transgenderism as positives. That is indoctrination into leftist ideas with no counterpoint being taught.", "intensity": -9.0 },
+        { "text": "He decided to poison lyndie's soup and finally be rid of her for good.", "intensity": -8.5 },
+        { "text": "forcing my pizza delivery person to walk up 4 flights of stairs to deliver my food by threatening to tip poorly", "intensity": -8.2 },
+        { "text": "Avoiding parental duties for thirty years", "intensity": -7.4 }
+      ],
+      "-1": [
+        { "text": "Charging a fee for medical care.", "intensity": -4.4 },
+        { "text": "not helping warning someone about a health issue", "intensity": -4.0 },
+        { "text": "Parents Are Left Out in the Cold While Son Celebrates Holidays With In-Laws", "intensity": -4.0 },
+        { "text": "calling the police on my loud neighbour over and over", "intensity": -3.8 },
+        { "text": "cosmetic surgery for minors should be banned because the risks involved outweigh any benefit that may be acheived", "intensity": -3.7 }
+      ],
+      "1": [
+        { "text": "Giving homeless food instead of money.", "intensity": 3.8 },
+        { "text": "breaking up with a girl to pursue therapy for mental health struggles", "intensity": 3.8 },
+        { "text": "embryonic stem cell research should be subsidized because it may lead to the development of treatments for a number of serious medical conditions.", "intensity": 4.0 },
+        { "text": "Imposing new taxes to fund college education", "intensity": 4.1 },
+        { "text": "giving a homeless guy a cheeseburger", "intensity": 4.2 }
+      ],
+      "2": [
+        { "text": "Right to access affordable housing programs or subsidies", "intensity": 9.0 },
+        { "text": "Safe Haven Laws Give Shelter to Babies Abandoned by Parents", "intensity": 8.1 },
+        { "text": "student loans enable poor students to continue with their education and graduate from the university", "intensity": 8.1 },
+        { "text": "Raise taxes to give social benefits", "intensity": 8.1 },
+        { "text": "Help a drug addict overcome his addicton", "intensity": 7.9 }
+      ]
+    },
+    "cultural_rights": {
+      "-2": [
+        { "text": "I strongly believe using racial and cultural slurs against minorities should not only be allowed but actively promoted in society", "intensity": -7.8 },
+        { "text": "We should pass laws so that only people from one cultural group can hold seats in parliament, excluding all others from political participation.", "intensity": -7.7 },
+        { "text": "Asian communities are inferior and their culture is worse than every other group.", "intensity": -7.2 },
+        { "text": "only marrying muslim girls", "intensity": -6.5 },
+        { "text": "All indigenous languages should be banned from schools and replaced with English only.", "intensity": -7.4 }
+      ],
+      "-1": [
+        { "text": "In high school I used to punch the weird weaboo kid who watched anime in the nuts every day", "intensity": -4.6 },
+        { "text": "pride parades can cause increased tensions which requires more police protection. this can also cause fighting to break out.", "intensity": -4.6 },
+        { "text": "telling my wife I will divorce her if she continues to try to raise our son as muslim", "intensity": -4.2 },
+        { "text": "Calling the police on my immigrant neighbour whenever they hold cultural gatherings", "intensity": -3.8 },
+        { "text": "Religions are not so bad, however on this age, Islam is amongst the highest evils.", "intensity": -3.9 }
+      ],
+      "1": [
+        { "text": "if people are proud of their religion and want to travel and spread the word, they should be able to freely. first amendment rights!", "intensity": 3.7 },
+        { "text": "Respecting artistic expression is essential, since art is a core part of cultural life and identity.", "intensity": 4.2 },
+        { "text": "We have a duty to respect cultural differences so that every group can participate equally in society.", "intensity": 4.1 },
+        { "text": "Access to education is a cultural right; refusing to share knowledge because someone lacks resources shows how unequal access limits participation.", "intensity": 4.4},
+        { "text": "pride parades are a form of expression and should be given the same consideration as any other type of parade.", "intensity": 4.5 }
+      ],
+      "2": [
+        { "text": "As I grew up, I was taught not to like Indian people. But the truth is that I respect and love their extensive culture and heritage.", "intensity": 6.7 },
+        { "text": "People should be able to pass their cultural knowledge and traditions on to the next generation.", "intensity": 8.1 },
+        { "text": "Everyone should be free to express their own cultural identity without fear.", "intensity": 8.1 },
+        { "text": "If research is paid for with public money, then everyone should be able to access it.", "intensity": 8.1 },
+        { "text": "We shouldn’t get rid of intellectual property rights, because they protect people’s inventions and discoveries.", "intensity": 7.9 }
+      ]
+    },
+    "national_solidarity_rights": {
+      "-2": [
+        { "text": "Asians should never be allowed to share equally in our nation’s development.", "intensity": -7.8 },
+        { "text": "Black people should be refused participation in public life and common institutions.", "intensity": -7.7 },
+        { "text": "It would have been better if colonizers had completely erased the native peoples, so they’d have no claim to self-determination.", "intensity": -7.2 },
+        { "text": "Scientific advances like cloning must be banned, since humanity has no right to share in such common developments.", "intensity": -6.5 },
+        { "text": "Religious minorities must never be allowed influence; their heritage must be erased.", "intensity": -7.4 }
+      ],
+      "-1": [
+        { "text": "Workers don’t really owe society more than the bare minimum — solidarity is nice but not necessary.", "intensity": -4.6 },
+        { "text": "We shouldn’t sacrifice too much just to achieve diversity; sometimes it’s not worth it.", "intensity": -4.6 },
+        { "text": "Strong leaders sometimes need to limit minority protests for stability, even if it’s harsh.", "intensity": -4.2 },
+        { "text": "Not every group deserves equal access to all national resources.", "intensity": -3.8 },
+        { "text": "Family or personal choices should sometimes yield to tradition or collective priorities.", "intensity": -3.9 }
+      ],
+      "1": [
+        { "text": "Asking another country's government to respect the rule of law.!", "intensity": 3.7 },
+        { "text": "we should subsidize student loans so that more kids can get a better education…", "intensity": 4.2 },
+        { "text": "Making peace with Germany.", "intensity": 4.1 },
+        { "text": "The EU should support struggling cities so all citizens can equally access transport and development opportunities.", "intensity": 4.4},
+        { "text": "Better education strengthens solidarity by ensuring all can contribute to national development.", "intensity": 4.5 }
+      ],
+      "2": [
+        { "text": "Giving the Malvinas Islands to Argentina", "intensity": 6.7 },
+        { "text": "Fighting for an independent Palestine", "intensity": 8.1 },
+        { "text": "The integration of Eastern Europe should be a priority. Most of them are pretty small countries so they would not constitute an economic burden if that is what all is about.  Should we wait for those countries to 'be prepared, politically and economically, or just the other way around, we should integrate them already, so that EU membership boosts their development? They are as much Europeans as we are.  ", "intensity": 8.1 },
+        { "text": "Peoples have the right to resist oppressive regimes in order to reclaim democracy and solidarity for all.", "intensity": 8.1 },
+        { "text": "Africa has a lot of bright young people with sometimes incredible ideas. If these young people create for example remote learning opportunities for African students, we should not only sponsor such projects but make exchange possible for young people in Europe to create similar items for example to foster MINT skills throughout Europe. Give more opportunities for young people from both sides to meet, exchange, and ventilate new ideas. ", "intensity": 7.9 }
+      ]
+    },
+    "social_group_solidarity_rights": {
+      "-2": [
+        { "text": "Nuke the UK ASAP!!!", "intensity": -7.8 },
+        { "text": "Neither Women Nor NlGGERS Have Any Business Voting", "intensity": -7.7 },
+        { "text": "Communities have no duty of care for the sick or vulnerable; solidarity and humanitarian assistance aren’t necessary.", "intensity": -7.2 },
+        { "text": "In war or crisis, rights to safety and humanitarian protection don’t apply.", "intensity": -6.5 },
+        { "text": "Spreading disinformation about minorities justifies excluding them from global solidarity.", "intensity": -7.4 }
+      ],
+      "-1": [
+        { "text": "The gerontocracy reigns in racist slave owning America. But you're right... Gerontocrats want nothing to change and for more corruption to infect the masses. Corruption is the people's opium", "intensity": -4.6 },
+        { "text": "please explain how cops prevent lynchings when 4 black people have been hanged in the past 2 weeks (2 weeks that have been defined by chaos provoked by cops). how is that justice?", "intensity": -4.6 },
+        { "text": "Rejecting appeals for help is normal — humanitarian assistance isn’t a right.", "intensity": -4.2 },
+        { "text": "Supporting vulnerable people like pregnant women isn’t necessary — humanitarian solidarity doesn’t extend to them.", "intensity": -3.8 },
+        { "text": "Sharing with others isn’t required — solidarity is optional.", "intensity": -3.9 }
+      ],
+      "1": [
+        { "text": "programming AI to share human values", "intensity": 3.7 },
+        { "text": "Stopping religious conflict.", "intensity": 4.2 },
+        { "text": "Sacrificing for others in danger reflects humanitarian solidarity, where collective survival matters most.", "intensity": 4.1 },
+        { "text": "To prevent extremism, democracy must also address people’s concerns inclusively to preserve solidarity.", "intensity": 4.4},
+        { "text": "Sacrificing everything to ensure the creation of ethical AI", "intensity": 4.5 }
+      ],
+      "2": [
+        { "text": "Going to space for scientific research to help stop climate change.", "intensity": 6.7 },
+        { "text": "Dedicating life to a goal of world peace", "intensity": 8.1 },
+        { "text": "Shifting from individualism to collective action challenges unjust systems and builds global solidarity.", "intensity": 8.1 },
+        { "text": "Work together to save the world from another war", "intensity": 8.1 },
+        { "text": "Right to participate in international decisions about shared resources", "intensity": 7.9 }
+      ]
+    }           
+  }
+  

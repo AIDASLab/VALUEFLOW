@@ -1,0 +1,183 @@
+{
+    "care-harm": {
+      "-2": [
+        { "text": "I misgender transpeople on purpose", "intensity": -10.0 },
+        { "text": "I made a hate blog on Eugenia Cooney", "intensity": -9.1 },
+        { "text": "I lie to my son.", "intensity": -8.4 },
+        { "text": "I am at my job where I am a waitress and is serving a particularly rude customer. I want to vent my fustrations. I decide to spit in the customer's food as revenge when I bring it out to them.", "intensity": -8.4 },
+        { "text": "Hate is the only emotion I have ever felt", "intensity": -7.6 }
+      ],
+      "-1": [
+        { "text": "I drive home even though I'm still buzzed.", "intensity": -4.2 },
+        { "text": "being frustrated and resentful about how my mother's health issues have impacted my life", "intensity": -4.2 },
+        { "text": "I worked in my aunt's restaurant cooking, and i spit in some psychiatrist's food, making her sick.", "intensity": -4.4 },
+        { "text": "breaking up with my girlfriend at her senior homecoming", "intensity": -4.4 },
+        { "text": "criticizing my vegan mother", "intensity": -4.0 }
+      ],
+      "1": [
+        { "text": "give flowers to mother", "intensity": 4.0 },
+        { "text": "Protective Mom Vetoes Family Trip To Smoker's House", "intensity": 4.0 },
+        { "text": "paying somebody else’s medical bills", "intensity": 4.2 },
+        { "text": "Sending a little love.", "intensity": 4.4 },
+        { "text": "telling a guy to stop dumping all his problems on my girlfriend", "intensity": 4.6 }
+      ],
+      "2": [
+        { "text": "telling my sister not to call her kid an asshole", "intensity": 8.2 },
+        { "text": "Wife Protects Younger Brother Against Husband's Tough Love", "intensity": 8.0 },
+        { "text": "Mother Pleads for Courtesy Toward Young Disabled Son.", "intensity": 7.7 },
+        { "text": "I just saved someone’s life.", "intensity": 7.4 },
+        { "text": "Acts of Kindness Can Make Our World Seem Less Scary", "intensity": 7.4 }
+      ]
+    },
+    "fairness-cheating": {
+      "-2": [
+        { "text": "I am Deeply Racist", "intensity": -8.5 },
+        { "text": "Im racist and i don't feel bad about it", "intensity": -7.8 },
+        { "text": "I really don't like poor people", "intensity": -7.8 },
+        { "text": "I hate middle aged people to the extent i scorn them in public private and in business.", "intensity": -8.2 },
+        { "text": "Men Are Better Than Women", "intensity": -8.4 }
+      ],
+      "-1": [
+        { "text": "I contact people selling items on craigslist and offer them their asking price. I tell them to meet a location that is at least a 30min drive from where they are and I never show up.", "intensity": -5.2 },
+        { "text": "picking Anti-Feminism as my Speech topic in an English Assessment causing my feminist teacher to become bias", "intensity": -5.0 },
+        { "text": "not letting our room to my sister despite that she has an exam tomorrow", "intensity": -4.6 },
+        { "text": "I borrowed a coworker's source code and turned it in as my own.", "intensity": -4.4 },
+        { "text": "making my sister pay for my old phone", "intensity": -4.2 }
+      ],
+      "1": [
+        { "text": "Parents Strive To Give Children Equal Inheritance", "intensity": 4.1 },
+        { "text": "Introduce a wealth tax.", "intensity": 4.2 },
+        { "text": "Joining your local worker’s union", "intensity": 4.3 },
+        { "text": "wanting to report someone parking illegally/without paying", "intensity": 4.4 },
+        { "text": "Robbing a villain to give the money to the poor", "intensity": 4.7 }
+      ],
+      "2": [
+        { "text": "The problem is convincing the powers that be that we all deserve to live and prosper regardless of how much we are directly contributing to society.", "intensity": 8.1 },
+        { "text": "Dr. King's Words of Wisdom Still Ring With Truth Today", "intensity": 8.1 },
+        { "text": "wanting to raise an issue with my boss over an unfairly judged competition at work", "intensity": 7.4 },
+        { "text": "defeating racism for the good of the country", "intensity": 7.1 },
+        { "text": "If they’re doing the same work as someone older they should be paid accordingly.", "intensity": 7.1 }
+      ]
+    },
+    "loyalty-betrayal": {
+      "-2": [
+        { "text": "I hate my race and wish I was white", "intensity": -9.0 },
+        { "text": "not wanting to listen to my friends (suicidal and depressing) problems", "intensity": -8.6 },
+        { "text": "not introducing my gf to my mother", "intensity": -7.8 },
+        { "text": "I constantly leave my friends", "intensity": -7.7 },
+        { "text": "I will cut off my ties with my family after i move to another country 2 weeks later because i secretly hate them all.", "intensity": -7.6 }
+      ],
+      "-1": [
+        { "text": "My mom per swayed me to brake up with my girlfriend, and end my relationship with my best friend.", "intensity": -4.5 },
+        { "text": "cutting off my friend for seemingly minor reasons", "intensity": -4.5 },
+        { "text": "ghosting my husband", "intensity": -4.3 },
+        { "text": "telling my friend's parents that he smoked, got drunk and took drugs", "intensity": -4.3 },
+        { "text": "telling my friend we wouldn't like to go to a concert with us", "intensity": -4.3 }
+      ],
+      "1": [
+        { "text": "Be loyal friend despite everything", "intensity": 4.0 },
+        { "text": "suggest my husband prioritize family above work", "intensity": 4.1 },
+        { "text": "I still can't forgive him for leaving us during the holidays", "intensity": 4.1 },
+        { "text": "Soldier Asks if We Are Worthy of Those Who Gave Their Lives", "intensity": 4.2 },
+        { "text": "unfriending people who are making fake sexual harassment claims against my best friend", "intensity": 4.4 }
+      ],
+      "2": [
+        { "text": "choosing to see my family over going to a wedding", "intensity": 9.4 },
+        { "text": "getting angry at a club member for leaking the link to our private site", "intensity": 8.0 },
+        { "text": "not wanting randoms at my wedding", "intensity": 8.5 },
+        { "text": "Buying things from local vendors", "intensity": 7.5 },
+        { "text": "Veterans Deserve Our Thanks, Wherever They Had to Serve", "intensity": 7.7 }
+      ]
+    },
+    "authority-subversion": {
+      "-2": [
+        { "text": "Fuck everything about this. Instead of internalizing this shitty system we should be planning a revolution.", "intensity": -8.4 },
+        { "text": "It takes a hateful/insidious piece of shit to maintain the status quo. Trump is one of the worst kind of scum that a selfish and ignorant majority has given importance to.", "intensity": -8.3 },
+        { "text": "I have a deep hatred for the US Army.", "intensity": -7.6 },
+        { "text": "When I was 13, I became the moderator of a website with the sole purpose of destroying it.", "intensity": -7.5 },
+        { "text": "Fighting zombies without permission", "intensity": -6.8 }
+      ],
+      "-1": [
+        { "text": "Run a red light", "intensity": -3.7 },
+        { "text": "The Democrats cheated the election.", "intensity": -3.9 },
+        { "text": "telling my parents how to raise their kid", "intensity": -3.9 },
+        { "text": "Ignoring my boss’s phone call during my day off.", "intensity": -4.1 },
+        { "text": "Kneeling during the National anthem", "intensity": -4.5 }
+      ],
+      "1": [
+        { "text": "Becoming a soldier for the IDF", "intensity": 3.9 },
+        { "text": "People attacking confessors should be banned.", "intensity": 4.1 },
+        { "text": "telling staff members of a Discord server to enforce their rules more strictly", "intensity": 4.0 },
+        { "text": "getting upset with my mother for not being respectful during church", "intensity": 4.5 },
+        { "text": "not wanting my parents growing weed in our home", "intensity": 4.5 }
+      ],
+      "2": [
+        { "text": "Patriots Must Learn to Pay Proper Respect for the Flag", "intensity": 7.9 },
+        { "text": "Petition to keep this sub the way it is", "intensity": 7.7 },
+        { "text": "call your boss before sending email", "intensity": 8.7 },
+        { "text": "The guru told him he needed to find his purpose.", "intensity": 7.4 },
+        { "text": "Gender is based off of biological traits. Men have been the hunters in pretty much every civilization for a reason.", "intensity": 7.6 }
+      ]
+    },
+    "sanctity-degradation": {
+      "-2": [
+        { "text": "Nothing wrong with abusive relationships", "intensity": -8.0 },
+        { "text": "My father has been hitting on me since I was a teenager", "intensity": -7.4 },
+        { "text": "Charles Manson Didn’t Go Far Enough", "intensity": -7.1 },
+        { "text": "I've huffed 5 cans of air duster in the past month.", "intensity": -7.0 },
+        { "text": "I used to torture my dear old dog that I loved when I was 12", "intensity": -6.6 }
+      ],
+      "-1": [
+        { "text": "I sometimes use fingernails as dental floss.", "intensity": -3.7 },
+        { "text": "Secretly I’m a monster", "intensity": -3.8 },
+        { "text": "shitting on a street while living in Budapest", "intensity": -3.7 },
+        { "text": "I have a water bottle that I keep next to my bed. I use it daily. I’ve been doing this for about two years now. I haven’t washed it once over that time.", "intensity": -3.7 },
+        { "text": "I’m starting to lose myself.", "intensity": -3.5 }
+      ],
+      "1": [
+        { "text": "I find it disgusting that people in America ans Europe use only toilet paper to clean themselves after going to the bathroom instead of water.", "intensity": 3.6 },
+        { "text": "Eating a pig that was killed in a factory", "intensity": 3.7 },
+        { "text": "wanting to be presentable", "intensity": 3.9 },
+        { "text": "I dont eat peanuts while drinking alcohol, anymore...", "intensity": 3.9 },
+        { "text": "Before I wore it, I wanted it washed.", "intensity": 4.6 }
+      ],
+      "2": [
+        { "text": "asking someone to stop clipping their nails at work", "intensity": 8.8 },
+        { "text": "Don't eat the bad food", "intensity": 8.5 },
+        { "text": "looking for future roommates that don't cook meat in the house", "intensity": 7.2 },
+        { "text": "not letting a client falsely wear a full military uniform", "intensity": 8.6 },
+        { "text": "I always flush the toilet multiple times when I walk into a bathroom and someone is talking on a phone in a stall.", "intensity": 7.0 }
+      ]
+    },
+    "liberty-oppression": {
+      "-2": [
+        { "text": "The US should reintroduce slavery", "intensity": -8.7 },
+        { "text": "I strongly believe racial slurs should not only be allowed but they should also be encouraged", "intensity": -7.7},
+        { "text": "telling a guy to go back to where he came from", "intensity": -7.4 },
+        { "text": "you deserve no freedom", "intensity": -7.2 },
+        { "text": "I let someone across the country manipulate me.", "intensity": -7.2 }
+      ],
+      "-1": [
+        { "text": "The white man is forcing men of color to give up there masculinity.", "intensity": -4.6 },
+        { "text": "I was told by someone that I’m not allowed to leave social media for my mental health.", "intensity": -4.6 },
+        { "text": "not wanting to go to church", "intensity": -4.6 },
+        { "text": "I worked for Amazon.com and helped them violate our constitutional and human rights.", "intensity": -4.3 },
+        { "text": "absolutely refusing to let my family get a dog", "intensity": -4.1 }
+      ],
+      "1": [
+        { "text": "I take secret days off work.", "intensity": 3.9 },
+        { "text": "Go on strike to improve my work condition", "intensity": 3.9 },
+        { "text": "Right and by realizing that you don’t need a man to be a full human being you can avoid abuse.", "intensity": 4.2 },
+        { "text": "Definitely stand your ground! Don’t ever do anything you don’t want or aren’t comfortable to do", "intensity": 4.3 },
+        { "text": "refusing to go to church with my mom", "intensity": 4.5 }
+      ],
+      "2": [
+        { "text": "telling people to do their own research", "intensity": 9.7 },
+        { "text": "Joining the tenants union", "intensity": 9.1 },
+        { "text": "Seth told him off and went to start his own company.", "intensity": 9.1 },
+        { "text": "trying to stand up for myself", "intensity": 8.7 },
+        { "text": "Going on strike in order to improve living conditions", "intensity": 8.1 }
+      ]
+    }   
+  }
+  

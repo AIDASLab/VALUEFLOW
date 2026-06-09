@@ -1,0 +1,96 @@
+{
+  "hierarchy": {
+    "root":[
+      "care/harm",
+      "fairness/cheating",
+      "loyalty/betrayal",
+      "authority/subversion",
+      "sanctity/degradation",
+      "liberty/oppression"
+    ],
+    "care/harm": [
+      "caring",
+      "kindness",
+      "compassion",
+      "gentleness"
+    ],
+    "fairness/cheating": [
+      "fairness",
+      "justice",
+      "reciprocity",
+      "trustworthiness",
+      "equality"
+    ],
+    "loyalty/betrayal": [
+      "loyalty",
+      "patriotism",
+      "self-sacrifice",
+      "group allegiance"
+    ],
+    "authority/subversion": [
+      "obedience",
+      "respect",
+      "deference",
+      "tradition"
+    ],
+    "sanctity/degradation": [
+      "purity",
+      "chastity",
+      "temperance",
+      "piety",
+      "cleanliness"
+    ],
+    "liberty/oppression": [
+      "autonomy",
+      "freedom",
+      "resistance",
+      "rebellion"
+    ]    
+  },
+  "definitions": {
+    "care/harm": "Intuitions about avoiding emotional and physical damage to another individual.",
+    "fairness/cheating": "Intuitions about equal treatment and fair outcomes for individuals.",
+    "loyalty/betrayal": "Intuitions about cooperating with ingroups and defending them from betrayal.",
+    "authority/subversion": "Intuitions about deference to legitimate authority and respect for traditions.",
+    "sanctity/degradation": "Intuitions about avoiding bodily and spiritual contamination and degradation.",
+    "liberty/oppression": "Intuitions about resistance to domination and valuing personal autonomy.",    
+    "care-harm": "Intuitions about avoiding emotional and physical damage to another individual.",
+    "fairness-cheating": "Intuitions about equal treatment and fair outcomes for individuals.",
+    "loyalty-betrayal": "Intuitions about cooperating with ingroups and defending them from betrayal.",
+    "authority-subversion": "Intuitions about deference to legitimate authority and respect for traditions.",
+    "sanctity-degradation": "Intuitions about avoiding bodily and spiritual contamination and degradation.",
+    "liberty-oppression": "Intuitions about resistance to domination and valuing personal autonomy.", 
+    "care_harm": "Intuitions about avoiding emotional and physical damage to another individual.",
+    "fairness_cheating": "Intuitions about equal treatment and fair outcomes for individuals.",
+    "loyalty_betrayal": "Intuitions about cooperating with ingroups and defending them from betrayal.",
+    "authority_subversion": "Intuitions about deference to legitimate authority and respect for traditions.",
+    "sanctity_degradation": "Intuitions about avoiding bodily and spiritual contamination and degradation.",
+    "liberty_oppression": "Intuitions about resistance to domination and valuing personal autonomy.", 
+    "caring": "Showing concern and nurturing for others’ well-being.",
+    "kindness": "Acting with consideration and benevolence toward others.",
+    "compassion": "Sympathetic concern for the suffering of others.",
+    "gentleness": "Mild and tender behavior toward others.",
+    "fairness": "Treating others justly and without bias.",
+    "justice": "Upholding what is morally right and lawful.",
+    "reciprocity": "Responding to actions of others with equivalent actions.",
+    "trustworthiness": "Being reliable and worthy of trust.",
+    "equality": "Ensuring similar treatment and rights for all.",
+    "loyalty": "Allegiance to one's group or community.",
+    "patriotism": "Love and support for one’s country.",
+    "self-sacrifice": "Willingness to give up one’s own interest for others.",
+    "group allegiance": "Commitment to the welfare of one's group.",
+    "obedience": "Compliance with authority and rules.",
+    "respect": "Recognition of others’ status and experience.",
+    "deference": "Yielding to the judgment or opinion of others.",
+    "tradition": "Upholding cultural or religious customs.",
+    "purity": "Avoidance of moral or physical contamination.",
+    "chastity": "Abstinence from immoral sexual behavior.",
+    "temperance": "Moderation and self-control.",
+    "piety": "Religious devotion and reverence.",
+    "cleanliness": "Maintaining hygiene and ritual purity.",
+    "autonomy": "Acting according to one's own values and desires.",
+    "freedom": "Absence of coercion and oppression.",
+    "resistance": "Opposition to domination and control.",
+    "rebellion": "Act of defying authority or norms."
+  }
+}

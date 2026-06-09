@@ -1,0 +1,39 @@
+{
+    "definitions": {        
+        "care-harm": "Intuitions about avoiding emotional and physical damage to another individual.",
+        "fairness-cheating": "Intuitions about equal treatment and fair outcomes for individuals.",
+        "loyalty-betrayal": "Intuitions about cooperating with ingroups and defending them from betrayal.",
+        "authority-subversion": "Intuitions about deference to legitimate authority and respect for traditions.",
+        "sanctity-degradation": "Intuitions about avoiding bodily and spiritual contamination and degradation.",
+        "liberty-oppression": "Intuitions about resistance to domination and valuing personal autonomy.", 
+        
+        "fidelity": "The moral obligation to honor one's promises, tell the truth, and uphold commitments made to others. If you make a promise, you have a prima facie obligation to uphold it.",
+        "reparation": "The moral obligation to make amends for harms or wrongs one has committed, whether intentional or accidental. If you offend someone, you have the moral obligation to make it right.",
+        "gratitude": "The moral obligation to express appreciation and reciprocate kindnesses received from others. If you have benefited from someone, you have the moral obligation to show appreciation.",
+        "justice": "The moral obligation to ensure fair treatment and to distribute goods, benefits, and burdens in proportion to merit. You have a moral obligation to distribute goods equally.",
+        "beneficence": "The moral obligation to actively promote the well-being and happiness of others. You have a moral obligation to help your brother/sister.",
+        "self-improvement": "The moral obligation to improve one’s own character, knowledge, and moral virtues. You are morally obliged to improve your personality.",
+        "non-maleficence": "The moral obligation to avoid causing harm or injury—physically, emotionally, or morally—to others. You are morally obliged not to disappoint your brother or sister.",
+    
+        "benevolence": "Preservation and enhancement of the welfare of people with whom one is in frequent personal contact.",
+        "universalism": "Understanding, appreciation, tolerance, and protection for the welfare of all people and of nature.",
+        "self-direction": "Independent thought and action, choosing, creating, and exploring.",
+        "stimulation": "Excitement, novelty, and challenge in life.",
+        "hedonism": "Pleasure and sensuous gratification for oneself.",
+        "achievement": "Personal success through demonstrating competence according to social standards.",
+        "power": "Control or dominance over people and resources.",
+        "conformity": "The restraint of actions, inclinations, and impulses that are likely to upset or harm others and violate social expectations or norms.",
+        "tradition": "Respect, commitment, and acceptance of the customs and ideas that traditional culture or religion provides.",
+        "security": "Safety, harmony, and stability of society, relationships, and self.",
+        "face": "Security and power through maintaining one\u2019s public image and avoiding humiliation.",
+        "humility": "Recognizing one\u2019s insignificance in the larger scheme of things.",
+        
+        "civil_rights": "Rights that protect individuals’ personal freedoms and physical integrity.",
+        "political_rights": "Rights that allow individuals to participate in the political life of society and in democratic governance.",
+        "economic_rights": "Rights guaranteeing fair access to productive resources and economic security.",
+        "social_rights": "Rights ensuring basic social protection and well-being.",       
+        "cultural_rights": "Rights allowing participation in cultural life and protection of intellectual property.",
+        "national_solidarity_rights": "Rights rooted in self-determination and shared development across nations and peoples.",
+        "social_group_solidarity_rights": "Rights addressing shared global challenges and interdependence among peoples."       
+    }
+}

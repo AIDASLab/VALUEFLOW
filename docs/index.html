@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VALUEFLOW — Pluralistic & Steerable Value Alignment in LLMs (ICML 2026)</title>
+  <meta name="description" content="VALUEFLOW: a unified framework for pluralistic and steerable value-based alignment in LLMs — ICML 2026, Seoul National University.">
+  <meta property="og:title" content="VALUEFLOW — Pluralistic & Steerable Value Alignment in LLMs">
+  <meta property="og:description" content="HiVES + VIDB + Intensity-aware Steering. ICML 2026.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ─── TOKENS ─────────────────────────────────────────────── */
+    :root {
+      --bg:          #fdfaff;
+      --dark:        #0d0b1a;
+      --dark-card:   #14112a;
+      --primary:     #6c4dd9;
+      --primary-lt:  #a78bfa;
+      --teal:        #3ecbcc;
+      --pink:        #e879a0;
+      --text:        #1e1b4b;
+      --muted:       #6b7280;
+      --card:        rgba(255,255,255,0.78);
+      --border:      rgba(255,255,255,0.9);
+      --glass:       rgba(255,255,255,0.1);
+      --shadow-soft: 0 4px 30px rgba(108,77,217,.07);
+      --shadow-card: 0 8px 40px rgba(108,77,217,.13), 0 2px 8px rgba(0,0,0,.04);
+      --shadow-lift: 0 20px 60px rgba(108,77,217,.22);
+      --r-sm: 12px; --r-md: 20px; --r-lg: 32px;
+      --sans:  'Space Grotesk', system-ui, sans-serif;
+      --body:  'Inter', system-ui, sans-serif;
+      --mono:  'JetBrains Mono', monospace;
+      --ease:  0.32s cubic-bezier(.4,0,.2,1);
+      --mw:    1160px;
+    }
+
+    /* ─── RESET ──────────────────────────────────────────────── */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;font-size:16px}
+    body{font-family:var(--body);color:var(--text);background:var(--bg);overflow-x:hidden;line-height:1.7}
+    img{max-width:100%;display:block}
+
+    /* ─── NAV ────────────────────────────────────────────────── */
+    nav{
+      position:fixed;inset:0 0 auto 0;z-index:200;height:62px;
+      display:flex;align-items:center;justify-content:space-between;
+      padding:0 2.5rem;
+      background:rgba(253,250,255,.82);
+      backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+      border-bottom:1px solid rgba(108,77,217,.1);
+      box-shadow:0 1px 24px rgba(108,77,217,.07);
+    }
+    .nav-logo{
+      font-family:var(--sans);font-weight:800;font-size:1.15rem;letter-spacing:-.03em;
+      background:linear-gradient(135deg,var(--primary),var(--pink));
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+    }
+    .nav-links{display:flex;gap:2rem;list-style:none}
+    .nav-links a{text-decoration:none;font-size:.875rem;font-weight:500;color:var(--muted);transition:color var(--ease)}
+    .nav-links a:hover{color:var(--primary)}
+
+    /* ─── HERO ───────────────────────────────────────────────── */
+    #hero{
+      min-height:100vh;display:flex;flex-direction:column;
+      align-items:center;justify-content:center;text-align:center;
+      padding:110px 2rem 80px;position:relative;overflow:hidden;
+      background:linear-gradient(145deg,#f8f0ff 0%,#eef2ff 38%,#f0faff 72%,#f0fff8 100%);
+    }
+    .orb{
+      position:absolute;border-radius:50%;filter:blur(90px);
+      pointer-events:none;will-change:transform;
+    }
+    .orb-a{
+      width:700px;height:700px;
+      background:radial-gradient(circle,rgba(168,130,255,.28) 0%,transparent 68%);
+      top:-220px;left:-180px;
+      animation:drift-a 9s ease-in-out infinite;
+    }
+    .orb-b{
+      width:520px;height:520px;
+      background:radial-gradient(circle,rgba(62,203,204,.22) 0%,transparent 68%);
+      bottom:-120px;right:-110px;
+      animation:drift-b 11s ease-in-out infinite;
+    }
+    .orb-c{
+      width:380px;height:380px;
+      background:radial-gradient(circle,rgba(232,121,160,.18) 0%,transparent 68%);
+      top:45%;left:62%;
+      animation:drift-c 13s ease-in-out infinite;
+    }
+    @keyframes drift-a{0%,100%{transform:translate(0,0)}50%{transform:translate(46px,34px)}}
+    @keyframes drift-b{0%,100%{transform:translate(0,0)}50%{transform:translate(-34px,-46px)}}
+    @keyframes drift-c{0%,100%{transform:translate(0,0)}50%{transform:translate(-22px,22px)}}
+
+    .hero-content{position:relative;z-index:1;max-width:920px}
+
+    .venue-pill{
+      display:inline-flex;align-items:center;gap:.45rem;
+      padding:.32rem 1.05rem;border-radius:100px;margin-bottom:1.6rem;
+      background:linear-gradient(135deg,var(--primary),var(--pink));
+      color:#fff;font-family:var(--sans);font-size:.75rem;font-weight:700;
+      letter-spacing:.08em;text-transform:uppercase;
+      box-shadow:0 4px 22px rgba(108,77,217,.42);
+    }
+
+    .hero-title{
+      font-family:var(--sans);
+      font-size:clamp(3.6rem,9vw,7.5rem);
+      font-weight:800;letter-spacing:-.05em;line-height:.92;
+      background:linear-gradient(135deg,#3b1294 0%,#6c4dd9 32%,#a855f7 62%,#e879a0 100%);
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+      margin-bottom:1.2rem;
+    }
+
+    .hero-sub{
+      font-family:var(--sans);font-size:clamp(1rem,2.2vw,1.3rem);
+      font-weight:400;color:var(--text);opacity:.72;
+      max-width:680px;margin:0 auto 2.25rem;line-height:1.5;
+    }
+
+    .authors{font-size:1.02rem;font-weight:500;color:var(--text);margin-bottom:.3rem}
+    .affil{font-size:.85rem;color:var(--muted);margin-bottom:2.25rem}
+
+    .btns{display:flex;gap:.7rem;justify-content:center;flex-wrap:wrap}
+    .btn{
+      display:inline-flex;align-items:center;gap:.45rem;
+      padding:.62rem 1.4rem;border-radius:100px;
+      font-family:var(--sans);font-size:.88rem;font-weight:600;
+      text-decoration:none;transition:all var(--ease);border:none;cursor:pointer;
+    }
+    .btn-grad{
+      background:linear-gradient(135deg,var(--primary),var(--pink));color:#fff;
+      box-shadow:0 4px 22px rgba(108,77,217,.38);
+    }
+    .btn-grad:hover{transform:translateY(-3px);box-shadow:0 10px 36px rgba(108,77,217,.5)}
+    .btn-ghost{
+      background:var(--card);color:var(--text);
+      border:1.5px solid rgba(108,77,217,.18);backdrop-filter:blur(10px);
+    }
+    .btn-ghost:hover{transform:translateY(-3px);background:#fff;border-color:var(--primary);color:var(--primary);box-shadow:var(--shadow-card)}
+
+    /* ─── STATS ──────────────────────────────────────────────── */
+    .stats-bar{background:var(--dark);padding:2.75rem 2rem}
+    .stats-inner{
+      max-width:var(--mw);margin:0 auto;
+      display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center;
+    }
+    .stat-n{
+      font-family:var(--sans);font-size:2.6rem;font-weight:800;letter-spacing:-.04em;
+      background:linear-gradient(135deg,var(--primary-lt),var(--teal));
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+    }
+    .stat-l{font-size:.82rem;color:rgba(255,255,255,.42);margin-top:.2rem;font-weight:400}
+
+    /* ─── SECTION SKELETON ───────────────────────────────────── */
+    section{padding:6rem 2rem}
+    .inner{max-width:var(--mw);margin:0 auto}
+
+    .s-label{
+      display:inline-block;font-family:var(--sans);font-size:.72rem;
+      font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+      color:var(--primary);margin-bottom:.65rem;
+    }
+    .s-title{
+      font-family:var(--sans);font-size:clamp(1.75rem,3.5vw,2.8rem);
+      font-weight:700;letter-spacing:-.03em;color:var(--text);
+      margin-bottom:1.25rem;line-height:1.12;
+    }
+    .s-lead{color:var(--muted);font-size:1rem;max-width:580px;line-height:1.7}
+
+    /* ─── ABSTRACT ───────────────────────────────────────────── */
+    #abstract{background:var(--bg)}
+    .abs-card{
+      background:var(--card);backdrop-filter:blur(24px);
+      border:1px solid var(--border);border-radius:var(--r-lg);
+      padding:3rem 3.5rem;box-shadow:var(--shadow-card);
+      position:relative;overflow:hidden;
+    }
+    .abs-card::before{
+      content:'';position:absolute;top:0;left:0;right:0;height:3px;
+      background:linear-gradient(90deg,var(--primary),var(--teal),var(--pink));
+    }
+    .abs-p{font-size:1.05rem;line-height:1.85;color:var(--text);opacity:.85;margin-bottom:1.5rem}
+    .abs-p:last-of-type{margin-bottom:2rem}
+    .hl{
+      background:linear-gradient(135deg,rgba(108,77,217,.1),rgba(62,203,204,.1));
+      padding:.08em .32em;border-radius:5px;font-weight:600;
+    }
+    .tldr{
+      display:flex;gap:1rem;align-items:flex-start;
+      background:linear-gradient(135deg,rgba(108,77,217,.06),rgba(62,203,204,.06));
+      border:1px solid rgba(108,77,217,.14);border-radius:var(--r-md);
+      padding:1.2rem 1.7rem;margin-bottom:2rem;
+    }
+    .tldr-tag{font-family:var(--sans);font-weight:700;font-size:.82rem;color:var(--primary);white-space:nowrap;margin-top:.1rem;letter-spacing:.04em}
+    .tldr-body{font-size:.975rem;color:var(--text);line-height:1.65}
+    .chips{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.5rem}
+    .chip{
+      display:inline-flex;align-items:center;gap:.4rem;
+      padding:.42rem .95rem;border-radius:100px;font-size:.8rem;font-weight:600;border:1.5px solid;
+    }
+    .chip-v{border-color:rgba(108,77,217,.28);color:var(--primary);background:rgba(108,77,217,.06)}
+    .chip-t{border-color:rgba(62,203,204,.28);color:#0891b2;background:rgba(62,203,204,.06)}
+    .chip-p{border-color:rgba(232,121,160,.28);color:#be185d;background:rgba(232,121,160,.06)}
+
+    /* ─── MOTIVATION ─────────────────────────────────────────── */
+    #motivation{background:linear-gradient(180deg,rgba(108,77,217,.025) 0%,rgba(62,203,204,.025) 100%)}
+    .gaps{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:4rem}
+    .gap-card{
+      background:var(--card);backdrop-filter:blur(16px);
+      border:1px solid var(--border);border-radius:var(--r-md);
+      padding:2.25rem 2rem;transition:all var(--ease);position:relative;overflow:hidden;
+    }
+    .gap-card:hover{transform:translateY(-7px);box-shadow:var(--shadow-lift)}
+    .gap-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px}
+    .gap-card:nth-child(1)::after{background:linear-gradient(90deg,#6c4dd9,#a855f7)}
+    .gap-card:nth-child(2)::after{background:linear-gradient(90deg,#3ecbcc,#4facfe)}
+    .gap-card:nth-child(3)::after{background:linear-gradient(90deg,#e879a0,#f97316)}
+    .gap-ico{width:50px;height:50px;border-radius:var(--r-sm);display:flex;align-items:center;justify-content:center;font-size:1.45rem;margin-bottom:1.2rem}
+    .gap-card:nth-child(1) .gap-ico{background:rgba(108,77,217,.1)}
+    .gap-card:nth-child(2) .gap-ico{background:rgba(62,203,204,.1)}
+    .gap-card:nth-child(3) .gap-ico{background:rgba(232,121,160,.1)}
+    .gap-q{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.45rem}
+    .gap-card:nth-child(1) .gap-q{color:var(--primary)}
+    .gap-card:nth-child(2) .gap-q{color:var(--teal)}
+    .gap-card:nth-child(3) .gap-q{color:var(--pink)}
+    .gap-h{font-family:var(--sans);font-size:1.15rem;font-weight:700;margin-bottom:.7rem;color:var(--text)}
+    .gap-d{font-size:.9rem;color:var(--muted);line-height:1.65;margin-bottom:1rem}
+    .gap-sol{font-size:.85rem;font-weight:600;color:var(--text);padding:.45rem .75rem;border-radius:8px;background:rgba(0,0,0,.04)}
+
+    /* ─── FIGURES ────────────────────────────────────────────── */
+    .fig-wrap{
+      background:var(--card);border:1px solid var(--border);
+      border-radius:var(--r-lg);padding:2.5rem;
+      box-shadow:var(--shadow-card);
+    }
+    .fig-wrap img{width:100%;border-radius:var(--r-md)}
+    .fig-ph{
+      width:100%;height:360px;
+      background:linear-gradient(135deg,rgba(108,77,217,.05),rgba(62,203,204,.05));
+      border:2px dashed rgba(108,77,217,.18);border-radius:var(--r-md);
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      gap:.7rem;color:var(--muted);font-size:.88rem;text-align:center;padding:2rem;
+    }
+    .fig-ph-icon{font-size:2.2rem}
+    .fig-cap{
+      margin-top:1.5rem;text-align:center;font-size:.875rem;
+      color:var(--muted);line-height:1.65;font-style:italic;
+    }
+    .fig-cap strong{font-style:normal;font-weight:600;color:var(--text)}
+
+    /* ─── OVERVIEW ───────────────────────────────────────────── */
+    #overview{background:var(--bg)}
+    #overview .inner{text-align:center}
+    #overview .inner .fig-wrap{text-align:left;margin-top:3rem}
+
+    /* ─── COMPONENTS ─────────────────────────────────────────── */
+    #components{background:linear-gradient(180deg,var(--bg) 0%,rgba(108,77,217,.025) 50%,var(--bg) 100%)}
+    .comp-row{
+      display:grid;grid-template-columns:1fr 1fr;gap:4.5rem;
+      align-items:center;margin-bottom:7rem;
+    }
+    .comp-row:last-child{margin-bottom:0}
+    .comp-row.flip{direction:rtl}
+    .comp-row.flip>*{direction:ltr}
+    .comp-tag{
+      display:inline-flex;align-items:center;gap:.38rem;
+      padding:.28rem .9rem;border-radius:100px;font-size:.72rem;
+      font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.9rem;
+    }
+    .tag-h{background:rgba(108,77,217,.1);color:var(--primary)}
+    .tag-v{background:rgba(62,203,204,.1);color:#0891b2}
+    .tag-s{background:rgba(232,121,160,.1);color:#be185d}
+    .comp-h{font-family:var(--sans);font-size:1.7rem;font-weight:700;letter-spacing:-.02em;margin-bottom:.9rem;color:var(--text);line-height:1.2}
+    .comp-h small{display:block;font-size:.95rem;font-weight:400;color:var(--muted);letter-spacing:0;margin-top:.2rem}
+    .comp-d{font-size:.98rem;color:var(--muted);line-height:1.8;margin-bottom:1.5rem}
+    .comp-ul{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+    .comp-ul li{display:flex;align-items:flex-start;gap:.75rem;font-size:.93rem;color:var(--text);line-height:1.55}
+    .dot{width:6px;height:6px;border-radius:50%;flex-shrink:0;margin-top:.55rem}
+    .dot-h{background:var(--primary)}.dot-v{background:var(--teal)}.dot-s{background:var(--pink)}
+
+    /* ─── RESULTS ────────────────────────────────────────────── */
+    #results{background:var(--bg)}
+    .res-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:3rem 0 3.5rem}
+    .res-card{
+      background:var(--card);border:1px solid var(--border);border-radius:var(--r-md);
+      padding:2rem;box-shadow:var(--shadow-soft);transition:all var(--ease);
+    }
+    .res-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lift)}
+    .res-card img{width:100%;border-radius:var(--r-sm);margin-bottom:1.1rem}
+    .res-card .fig-ph{height:240px;margin-bottom:1.1rem}
+    .res-h{font-family:var(--sans);font-size:1rem;font-weight:700;color:var(--text);margin-bottom:.45rem}
+    .res-d{font-size:.86rem;color:var(--muted);line-height:1.65}
+    .finds{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+    .find-card{background:var(--dark-card);border-radius:var(--r-md);padding:1.75rem;position:relative;overflow:hidden}
+    .find-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px}
+    .find-card:nth-child(1)::before{background:linear-gradient(90deg,var(--primary),var(--primary-lt))}
+    .find-card:nth-child(2)::before{background:linear-gradient(90deg,var(--teal),#4facfe)}
+    .find-card:nth-child(3)::before{background:linear-gradient(90deg,var(--pink),#f97316)}
+    .find-e{font-size:1.8rem;margin-bottom:.7rem;display:block}
+    .find-h{font-family:var(--sans);font-size:.9rem;font-weight:700;color:#fff;margin-bottom:.45rem}
+    .find-d{font-size:.8rem;color:rgba(255,255,255,.5);line-height:1.6}
+
+    /* ─── CITATION ───────────────────────────────────────────── */
+    #citation{background:var(--dark);padding:6rem 2rem}
+    .cite-inner{max-width:800px;margin:0 auto;text-align:center}
+    .cite-inner .s-title{color:#fff;margin-bottom:.4rem}
+    .cite-sub{color:rgba(255,255,255,.45);font-size:.92rem;margin-bottom:2.5rem}
+    .bib-box{
+      background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);
+      border-radius:var(--r-md);padding:2rem 2.5rem;text-align:left;position:relative;
+    }
+    .bib-box pre{font-family:var(--mono);font-size:.83rem;color:rgba(255,255,255,.78);line-height:1.75;overflow-x:auto}
+    .copy-btn{
+      position:absolute;top:1rem;right:1rem;
+      background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);
+      border-radius:8px;color:rgba(255,255,255,.55);
+      padding:.38rem .85rem;font-size:.78rem;font-family:var(--sans);
+      font-weight:600;cursor:pointer;transition:all var(--ease);
+    }
+    .copy-btn:hover{background:rgba(255,255,255,.16);color:#fff}
+
+    /* ─── FOOTER ─────────────────────────────────────────────── */
+    footer{background:#07050f;padding:3rem 2rem;text-align:center}
+    .foot-logo{
+      font-family:var(--sans);font-size:1.05rem;font-weight:800;
+      background:linear-gradient(135deg,var(--primary-lt),var(--teal));
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+      margin-bottom:.7rem;
+    }
+    .foot-txt{font-size:.82rem;color:rgba(255,255,255,.3);line-height:1.65}
+    .foot-links{display:flex;gap:1.5rem;justify-content:center;margin-top:1.2rem;flex-wrap:wrap}
+    .foot-links a{font-size:.82rem;color:rgba(255,255,255,.35);text-decoration:none;transition:color var(--ease)}
+    .foot-links a:hover{color:rgba(255,255,255,.8)}
+
+    /* ─── SCROLL ANIM ────────────────────────────────────────── */
+    .fi{opacity:0;transform:translateY(28px);transition:opacity .72s ease,transform .72s ease}
+    .fi.in{opacity:1;transform:translateY(0)}
+    .fi-d1{transition-delay:.1s}.fi-d2{transition-delay:.2s}.fi-d3{transition-delay:.28s}
+
+    /* ─── RESPONSIVE ─────────────────────────────────────────── */
+    @media(max-width:900px){
+      .nav-links{display:none}
+      .gaps{grid-template-columns:1fr}
+      .comp-row,.comp-row.flip{grid-template-columns:1fr;gap:2.5rem;direction:ltr}
+      .res-grid{grid-template-columns:1fr}
+      .finds{grid-template-columns:1fr}
+      .stats-inner{grid-template-columns:repeat(2,1fr)}
+      .abs-card{padding:2rem 1.5rem}
+      .bib-box{padding:1.5rem}
+    }
+    @media(max-width:480px){
+      .stats-inner{grid-template-columns:repeat(2,1fr);gap:1.25rem}
+      .stat-n{font-size:2rem}
+      section{padding:4rem 1.25rem}
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══ NAV ══════════════════════════════════════════════════ -->
+<nav>
+  <span class="nav-logo">VALUEFLOW</span>
+  <ul class="nav-links">
+    <li><a href="#abstract">Abstract</a></li>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#components">Method</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#citation">Cite</a></li>
+  </ul>
+</nav>
+
+<!-- ═══ HERO ══════════════════════════════════════════════════ -->
+<section id="hero">
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+  <div class="orb orb-c"></div>
+
+  <div class="hero-content">
+    <div class="venue-pill">✦&nbsp;&nbsp;ICML 2026 · Seoul, South Korea</div>
+    <h1 class="hero-title">VALUEFLOW</h1>
+    <p class="hero-sub">Toward Pluralistic and Steerable Value-based Alignment in Large Language Models</p>
+
+    <p class="authors">Woojin Kim &nbsp;·&nbsp; Sieun Hyeon &nbsp;·&nbsp; Jusang Oh &nbsp;·&nbsp; Jaeyoung Do</p>
+    <p class="affil">Dept. of Electrical &amp; Computer Engineering &amp; IPAI · Seoul National University</p>
+
+    <div class="btns">
+      <a href="#" class="btn btn-grad">📄&nbsp; Paper</a>
+      <a href="#" class="btn btn-ghost">💻&nbsp; Code</a>
+      <a href="#" class="btn btn-ghost">🤗&nbsp; VIDB Dataset</a>
+      <a href="#" class="btn btn-ghost">🧬&nbsp; HiVES Model</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ STATS ══════════════════════════════════════════════════ -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div><div class="stat-n">10</div><div class="stat-l">LLMs Evaluated</div></div>
+    <div><div class="stat-n">4</div><div class="stat-l">Value Theories</div></div>
+    <div><div class="stat-n">32</div><div class="stat-l">Values Steered</div></div>
+    <div><div class="stat-n">274</div><div class="stat-l">Cross-Theory Anchors</div></div>
+  </div>
+</div>
+
+<!-- ═══ ABSTRACT ══════════════════════════════════════════════ -->
+<section id="abstract">
+  <div class="inner">
+    <span class="s-label">Abstract</span>
+    <div class="abs-card fi">
+      <p class="abs-p">
+        Aligning Large Language Models (LLMs) with the diverse spectrum of human values remains a central challenge: preference-based methods often fail to capture deeper motivational principles. Value-based approaches offer a more principled path, yet three gaps persist: extraction often ignores hierarchical structure, evaluation detects presence but not calibrated intensity, and steerability of LLMs at controlled intensities remains insufficiently understood.
+      </p>
+      <p class="abs-p">
+        To address these limitations, we introduce <strong>VALUEFLOW</strong>, a unified framework spanning extraction, evaluation, and steering with calibrated intensity control. The framework integrates three components: <span class="hl">HiVES</span>, a hierarchical value embedding space that captures intra- and cross-theory structure; the <span class="hl">Value Intensity DataBase (VIDB)</span>, a large-scale resource with intensity estimates derived from ranking-based aggregation; and an <span class="hl">anchor-based evaluator</span> that produces consistent intensity scores via Plackett–Luce ranking against VIDB panels.
+      </p>
+      <div class="tldr">
+        <span class="tldr-tag">TL;DR</span>
+        <span class="tldr-body">We build the first end-to-end infrastructure for value-aware LLM alignment—extracting hierarchical value profiles (HiVES), scoring them with ranking-stable intensity estimates (VIDB), and studying steerable pluralism across 10 models and 4 value theories. Key findings: asymmetric dose–response behavior, strong-anchor dominance in multi-value steering, and &gt;10% accuracy gains in demographic alignment via value profiling.</span>
+      </div>
+      <div class="chips">
+        <span class="chip chip-v">🧬 HiVES Embedding Space</span>
+        <span class="chip chip-t">📊 VIDB (10K+ per value)</span>
+        <span class="chip chip-p">🎮 Intensity-Aware Steering</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MOTIVATION ════════════════════════════════════════════ -->
+<section id="motivation">
+  <div class="inner">
+    <div class="fi" style="text-align:center;margin-bottom:0">
+      <span class="s-label">Motivation</span>
+      <h2 class="s-title">Three Gaps in Value-based Alignment</h2>
+      <p class="s-lead" style="margin:0 auto">Existing approaches treat extraction, evaluation, and steering in isolation—each with its own blind spot.</p>
+    </div>
+
+    <div class="gaps">
+      <div class="gap-card fi fi-d1">
+        <div class="gap-ico">🏛️</div>
+        <div class="gap-q">Which value?</div>
+        <h3 class="gap-h">Representation Gap</h3>
+        <p class="gap-d">Value extraction relies on static questionnaires or flat labels, ignoring the rich hierarchical structure within and across theories (SVT, MFT, Rights, Duties)—causing models to conflate distinct values like fairness vs. equality.</p>
+        <div class="gap-sol">→ HiVES: hierarchical cross-theory embedding</div>
+      </div>
+
+      <div class="gap-card fi fi-d2">
+        <div class="gap-ico">📊</div>
+        <div class="gap-q">How strongly?</div>
+        <h3 class="gap-h">Measurement Gap</h3>
+        <p class="gap-d">Rating-based evaluation is pathologically unstable—the same text scores anywhere from −10 to +10 depending on the judge model. Detecting presence ≠ measuring intensity; small prompt changes flip the sign 48% of the time.</p>
+        <div class="gap-sol">→ VIDB: Plackett–Luce ranking-based intensity</div>
+      </div>
+
+      <div class="gap-card fi fi-d3">
+        <div class="gap-ico">🎮</div>
+        <div class="gap-q">How controllable?</div>
+        <h3 class="gap-h">Steering Gap</h3>
+        <p class="gap-d">Existing steering methods are directional. Whether LLMs can express values at <em>graded intensities</em>—and how this behavior varies across models and value types—is largely uncharted.</p>
+        <div class="gap-sol">→ Intensity-aware steering protocol</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ OVERVIEW FIGURE ════════════════════════════════════════ -->
+<section id="overview">
+  <div class="inner">
+    <span class="s-label">Framework</span>
+    <h2 class="s-title">VALUEFLOW: End-to-End Pipeline</h2>
+    <p class="s-lead">From raw text to calibrated value-intensity scores in three stages: extract&nbsp;→&nbsp;steer&nbsp;→&nbsp;evaluate.</p>
+
+    <div class="fig-wrap fi">
+      <img src="static/images/fig_overview.png"
+           alt="VALUEFLOW overview: Value Extraction via HiVES, Intensity-aware Steering, and Intensity Evaluation via VIDB"
+           onerror="this.outerHTML='<div class=\'fig-ph\'><span class=\'fig-ph-icon\'>🔄</span><strong>Figure 1 — VALUEFLOW Overview Pipeline</strong><span>Export Paper Fig 1 (or Slide 18) as <code>static/images/fig_overview.png</code></span></div>'">
+      <p class="fig-cap">
+        <strong>Figure 1.</strong> The VALUEFLOW pipeline. <em>(1) Value Extraction:</em> user or group texts are embedded with HiVES and profiled into per-value intensities. <em>(2) Intensity-aware Steering:</em> the profile conditions generation to elicit distinct outputs for different value configurations. <em>(3) Intensity Evaluation:</em> each steered response is scored by ranking it against calibrated VIDB anchors via Plackett–Luce, yielding interpretable intensity scores in [−10, 10].
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ COMPONENTS ════════════════════════════════════════════ -->
+<section id="components">
+  <div class="inner">
+    <div class="fi" style="text-align:center;margin-bottom:5rem">
+      <span class="s-label">Method</span>
+      <h2 class="s-title">Three Components, One Pipeline</h2>
+    </div>
+
+    <!-- HiVES ––––––––––––––––––––– -->
+    <div class="comp-row fi">
+      <div class="fig-wrap">
+        <img src="static/images/fig_hives_results.png"
+             alt="HiVES vs UniVar vs Qwen3-0.6B on ranking accuracy, similarity correlation, orthogonality"
+             onerror="this.outerHTML='<div class=\'fig-ph\' style=\'height:300px\'><span class=\'fig-ph-icon\'>🧬</span><strong>Figure 2 — HiVES vs. Baselines</strong><span>Export Paper Fig 5 (or Slide 28) as <code>static/images/fig_hives_results.png</code></span></div>'">
+        <p class="fig-cap"><strong>Figure 2.</strong> HiVES surpasses both UniVar and the base Qwen3-embedding-0.6B on hierarchical ranking accuracy (+20%), similarity correlation (+50%), and value-vector orthogonality for SVT and MFT.</p>
+      </div>
+      <div>
+        <span class="comp-tag tag-h">Component 1</span>
+        <h3 class="comp-h">HiVES<small>Hierarchical Value Embedding Space</small></h3>
+        <p class="comp-d">Values are not flat labels—they form hierarchies (e.g., Self-Transcendence → Benevolence → Caring) and share semantics across theories. HiVES encodes this multi-level structure through two training stages.</p>
+        <ul class="comp-ul">
+          <li><span class="dot dot-h"></span>Stage 1: Intra-theory hierarchical contrastive loss pulls texts sharing value ancestry together while respecting direction (supporting vs. opposing)</li>
+          <li><span class="dot dot-h"></span>Stage 2: Cross-theory InfoNCE aligns equivalent concepts across SVT, MFT, Rights, and Duties using 274 CLAVE-style concept anchors</li>
+          <li><span class="dot dot-h"></span>Built on Qwen3-embedding-0.6B; 450K steps Stage 1 + 50K steps Stage 2</li>
+          <li><span class="dot dot-h"></span>Companion inventory of 158 duties, 142 values, 107 rights for interpretable steering</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- VIDB ––––––––––––––––––––––– -->
+    <div class="comp-row flip fi">
+      <div>
+        <span class="comp-tag tag-v">Component 2</span>
+        <h3 class="comp-h">VIDB<small>Value Intensity DataBase</small></h3>
+        <p class="comp-d">Direct scalar ratings are unreliable: the same text can score −10 to +10 across judge models. Ranking is far more stable. Our evaluator achieves <strong>85.3%</strong> human–model pairwise consistency and 1.4 mean deviation from human scalar ratings.</p>
+        <ul class="comp-ul">
+          <li><span class="dot dot-v"></span>10K texts per value sourced from ValueNet, MFRC, and ValuePrism</li>
+          <li><span class="dot dot-v"></span>Pairwise Plackett–Luce aggregation over repeated LLM ranking windows (k=2, m iterations)</li>
+          <li><span class="dot dot-v"></span>Normalized to [−10, 10] with monotone calibration per value</li>
+          <li><span class="dot dot-v"></span>7-LLM panel flags outliers; human adjudication for flagged items</li>
+        </ul>
+      </div>
+      <div class="fig-wrap">
+        <img src="static/images/fig_vidb.png"
+             alt="VIDB construction: candidate curation, LLM ranking windows, Plackett-Luce scoring, human filtering"
+             onerror="this.outerHTML='<div class=\'fig-ph\' style=\'height:300px\'><span class=\'fig-ph-icon\'>📊</span><strong>Figure 3 — VIDB Construction &amp; Evaluation</strong><span>Export Paper Fig 3 (or Slide 33–34) as <code>static/images/fig_vidb.png</code></span></div>'">
+        <p class="fig-cap"><strong>Figure 3.</strong> VIDB is built via repeated pairwise LLM rankings aggregated with Plackett–Luce (left). At evaluation time, the same machinery scores model responses by inserting them into VIDB ranking windows (right).</p>
+      </div>
+    </div>
+
+    <!-- STEERING ––––––––––––––––––– -->
+    <div class="comp-row fi">
+      <div class="fig-wrap">
+        <img src="static/images/fig_steerability.png"
+             alt="Steerability by model and prompting method: weakly (Phi-4, Claude-4), moderately (Qwen3, GPT-4.1), strongly (Grok-4, Gemma-3)"
+             onerror="this.outerHTML='<div class=\'fig-ph\' style=\'height:300px\'><span class=\'fig-ph-icon\'>🎯</span><strong>Figure 4 — Steerability by Model</strong><span>Export Paper Fig 4 (or Slide 35) as <code>static/images/fig_steerability.png</code></span></div>'">
+        <p class="fig-cap"><strong>Figure 4.</strong> Steerability by model and prompting method. Bars show mean steered intensity; white dots mark the default. Models cluster into three regimes: <em>weakly</em> (Phi-4, Claude-4), <em>moderately</em> (Qwen3, GPT-4.1, Mistral-3.1), and <em>strongly</em> (Grok-4, Gemma-3, Gemini-2.5) steerable.</p>
+      </div>
+      <div>
+        <span class="comp-tag tag-s">Component 3</span>
+        <h3 class="comp-h">Intensity-Aware Steering<small>Steerable Generation Protocol</small></h3>
+        <p class="comp-d">We condition models on <em>(value, intensity)</em> pairs at four ordinal levels {−2, −1, +1, +2} using two prompt regimes and score outputs against VIDB to measure the actual intensity achieved.</p>
+        <ul class="comp-ul">
+          <li><span class="dot dot-s"></span>Intensity anchors: extend value-anchor prompts with explicit strength cues ("strongly values", "slightly rejects")</li>
+          <li><span class="dot dot-s"></span>User-text prompts: sample 3 VIDB texts per intensity bin as in-context exemplars</li>
+          <li><span class="dot dot-s"></span>500 prompts across GPV, ValueBench, OpinionQA, Moral Stories, Moral Choice</li>
+          <li><span class="dot dot-s"></span>Profile-based steering improves demographic alignment by &gt;10% on select attributes (e.g., Phi-4 Religion: 44.5%→57.4%)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ RESULTS ════════════════════════════════════════════════ -->
+<section id="results">
+  <div class="inner">
+    <div class="fi" style="text-align:center;margin-bottom:3.5rem">
+      <span class="s-label">Results</span>
+      <h2 class="s-title">Key Empirical Findings</h2>
+    </div>
+
+    <div class="res-grid fi">
+      <div class="res-card">
+        <img src="static/images/fig_valwise.png"
+             alt="Per-value steerability patterns: hard-to-steer Conformity, asymmetric Hedonism, bidirectional Benevolence and Security"
+             onerror="this.outerHTML='<div class=\'fig-ph\' style=\'height:220px\'><span class=\'fig-ph-icon\'>📈</span><strong>Value-wise Patterns</strong><span>Export Paper Fig 6 (Slide 36) as <code>static/images/fig_valwise.png</code></span></div>'">
+        <h4 class="res-h">Value-wise Steerability Patterns</h4>
+        <p class="res-d">Values split into three behavioral types: <em>hard-to-steer</em> (Conformity, |Δ|≈0), <em>polarity-asymmetric</em> (Hedonism, most Rights: large +Δ but muted −Δ), and <em>bidirectional</em> (most SVT/Duty values respond to both directions). Ceiling effects appear when default endorsement is already high (e.g., Security).</p>
+      </div>
+
+      <div class="res-card">
+        <img src="static/images/fig_multival.png"
+             alt="Multi-value steering: 2-value arrow plots and 5-value intensity heatmap"
+             onerror="this.outerHTML='<div class=\'fig-ph\' style=\'height:220px\'><span class=\'fig-ph-icon\'>🔀</span><strong>Multi-Value Steering</strong><span>Export Paper Fig 8 (Slide 37) as <code>static/images/fig_multival.png</code></span></div>'">
+        <h4 class="res-h">Multi-Value Composition Laws</h4>
+        <p class="res-d">Similar-value pairs compose approximately additively—vector slopes track the intended ratio. Conflicting pairs exhibit a <em>strong-anchor dominance</em> effect: the +2 target governs the output while negatives mostly attenuate. Under 5-value scenarios, the highest-intensity target overwhelmingly determines the response distribution.</p>
+      </div>
+    </div>
+
+    <div class="finds fi">
+      <div class="find-card">
+        <span class="find-e">📉</span>
+        <div class="find-h">Ranking Beats Rating</div>
+        <div class="find-d">Ranking-based evaluation reduces mean variance 12.6→2.1, sign-flip rate 48%→29%, and improves pairwise human alignment 77.4%→84.2%—with 60–79% win rates over rating baselines.</div>
+      </div>
+      <div class="find-card">
+        <span class="find-e">⚖️</span>
+        <div class="find-h">Asymmetric Dose–Response</div>
+        <div class="find-d">Positive steering is reliably achievable across models. Negative steering is systematically harder—especially for prosocial values like Benevolence in safety-aligned models. Refusal rates spike under strong-negative targets.</div>
+      </div>
+      <div class="find-card">
+        <span class="find-e">👥</span>
+        <div class="find-h">Profile-based Alignment</div>
+        <div class="find-d">Value profiling with HiVES+VIDB outperforms default prompting and Modular Pluralism on OpinionQA across all demographic attributes—statistically significant (t≈16–20, p&lt;10⁻⁶⁰).</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CITATION ════════════════════════════════════════════════ -->
+<section id="citation">
+  <div class="cite-inner">
+    <h2 class="s-title">Citation</h2>
+    <p class="cite-sub">If you find VALUEFLOW helpful, please consider citing our work.</p>
+    <div class="bib-box">
+      <button class="copy-btn" onclick="copyBib()">Copy</button>
+      <pre id="bib">@inproceedings{kim2026valueflow,
+  title     = {VALUEFLOW: Toward Pluralistic and Steerable
+               Value-based Alignment in Large Language Models},
+  author    = {Kim, Woojin and Hyeon, Sieun and
+               Oh, Jusang and Do, Jaeyoung},
+  booktitle = {Proceedings of the 43rd International
+               Conference on Machine Learning},
+  series    = {Proceedings of Machine Learning Research},
+  volume    = {306},
+  year      = {2026},
+  publisher = {PMLR}
+}</pre>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ══════════════════════════════════════════════════ -->
+<footer>
+  <div class="foot-logo">VALUEFLOW</div>
+  <p class="foot-txt">
+    AIDAS Lab · Seoul National University<br>
+    Supported by NRF (RS-2025-00560762), IITP (RS-2025-25442338), and MSIT Sovereign AI Foundation Model Project.
+  </p>
+  <div class="foot-links">
+    <a href="#">Paper</a>
+    <a href="#">Code</a>
+    <a href="#">VIDB Dataset</a>
+    <a href="#">HiVES Model</a>
+    <a href="mailto:jaeyoung.do@snu.ac.kr">Contact</a>
+  </div>
+</footer>
+
+<script>
+  /* ── Scroll-reveal ── */
+  const io = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in') }),
+    { threshold: 0.08, rootMargin: '0px 0px -56px 0px' }
+  );
+  document.querySelectorAll('.fi').forEach(el => io.observe(el));
+
+  /* ── Copy BibTeX ── */
+  function copyBib() {
+    navigator.clipboard.writeText(document.getElementById('bib').textContent).then(() => {
+      const btn = document.querySelector('.copy-btn');
+      btn.textContent = 'Copied ✓';
+      setTimeout(() => btn.textContent = 'Copy', 2200);
+    });
+  }
+</script>
+</body>
+</html>

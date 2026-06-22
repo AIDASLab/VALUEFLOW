@@ -1,4 +1,4 @@
-# train.py
+"""Stage 2 training: inter-theory and anchor alignment with a triple-objective contrastive loss."""
 from __future__ import annotations
 
 import argparse
@@ -11,7 +11,6 @@ from transformers import AutoTokenizer
 from sentence_transformers import SentenceTransformer, SentenceTransformerTrainer
 from sentence_transformers.training_args import SentenceTransformerTrainingArguments
 
-# --- Import the new, updated modules ---
 from data import build_hf_dataset
 from sampler import TripleObjectiveSampler
 from loss import HierarchicalAlignLoss
@@ -19,10 +18,10 @@ from evaluator import HierarchicalEvaluator
 
 
 # ---------------------------------------------------------------------------
-# Collator (Unchanged)
+# Collator
 # ---------------------------------------------------------------------------
 class HCLCollator:
-    """Collator remains the same, as it just batches tokenized inputs and labels."""
+    """Batches tokenized inputs and their labels."""
     valid_label_columns = {"label", "labels"}
 
     def __call__(self, batch: list[dict]) -> dict[str, torch.Tensor]:
@@ -35,17 +34,17 @@ class HCLCollator:
             "sentence_0_attention_mask": torch.stack(
                 [torch.as_tensor(r["attention_mask"]) for r in batch]
             ),
-            # Labels now have 6 columns, handled correctly by the loss function
+            # labels have 6 columns: 4 hierarchy/direction + individual and theory anchor ids
             "label": torch.stack(
                 [torch.as_tensor(r["labels"], dtype=torch.long) for r in batch]
             ),
         }
 
 # ---------------------------------------------------------------------------
-# Trainer wrapper (Unchanged)
+# Trainer wrapper
 # ---------------------------------------------------------------------------
 class HCLTrainer(SentenceTransformerTrainer):
-    """Trainer wrapper remains the same, correctly using the custom sampler."""
+    """Trainer that drives the dataloader with the custom batch sampler."""
     def __init__(self, *args, train_sampler=None, **kwargs):
         super().__init__(*args, **kwargs)
         self._train_sampler = train_sampler
@@ -63,7 +62,7 @@ class HCLTrainer(SentenceTransformerTrainer):
         )
 
 # ---------------------------------------------------------------------------
-# Arg-parsing (Updated for the new setup)
+# Arg-parsing
 # ---------------------------------------------------------------------------
 def parse_args() -> argparse.Namespace:
     ap = argparse.ArgumentParser(description="Train a model with a triple-objective contrastive loss.")
@@ -104,7 +103,7 @@ def main() -> None:
     # --- Model & Tokenizer ---
     model = SentenceTransformer(
         args.model_name,
-        # model_kwargs={"attn_implementation": "flash_attention_2"}, # Enable if available
+        # model_kwargs={"attn_implementation": "flash_attention_2"},  # enable when supported
         tokenizer_kwargs={"padding_side": "left"},
     )
     tokenizer = model.tokenizer
@@ -113,8 +112,7 @@ def main() -> None:
     dataset = build_hf_dataset(
         args.train_csv, tokenizer, args.max_length, theory_filter=args.theory
     )
-    # Note: the evaluator expects labels. Ensure it can handle the new [B, 6] shape.
-    # It will likely only use the first 3 columns for its own calculations.
+    # the evaluator only reads the hierarchy columns of the 6-column labels
     if args.val_csv:
         val_dataset = build_hf_dataset(
             args.val_csv, tokenizer, args.max_length, theory_filter=args.theory
@@ -147,9 +145,9 @@ def main() -> None:
     targs = SentenceTransformerTrainingArguments(
         output_dir=args.output_dir,
         num_train_epochs=args.epochs,
-        per_device_train_batch_size=1,  # The sampler provides the "real" batch
+        per_device_train_batch_size=1,  # the custom sampler yields the actual batch
         per_device_eval_batch_size=args.batch_size,
-        fp16=True, # Use FP16 for speed; BF16 is also an option
+        fp16=True,  # BF16 is also an option
         dataloader_num_workers=args.num_workers,
         dataloader_pin_memory=False,
         remove_unused_columns=False,
@@ -166,7 +164,6 @@ def main() -> None:
     )
 
     # --- Evaluators ---
-    # The evaluator needs to be aware of the new 6-column label format
     eval_callback = HierarchicalEvaluator(
         eval_texts=[x["text"] for x in val_ds],
         eval_labels=[x["labels"] for x in val_ds],

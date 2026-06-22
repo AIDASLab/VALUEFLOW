@@ -20,7 +20,7 @@ class CustomBatchSampler(Sampler[List[int]]):
         batch_size: int = 4,
         positives_per_anchor: int = 4,
         seed: int = 42,
-        report_stats: bool = True,        # NEW
+        report_stats: bool = True,
     ) -> None:
         super().__init__(data_source=range(len(dataset)))
         self.dataset = dataset
@@ -42,14 +42,14 @@ class CustomBatchSampler(Sampler[List[int]]):
             )
             self.theory2groups[row["theory"]][key].append(idx)
 
-        # NEW: precompute epoch-level stats (deterministic upper bound)
+        # precompute epoch-level stats (deterministic upper bound)
         self.stats = self._compute_epoch_stats()
 
         if report_stats:
             self._print_stats()
 
     # ------------------------------------------------------------------ #
-    # NEW: Compute expected number of yielded batches & skip reasons
+    # Compute expected number of yielded batches & skip reasons
     # ------------------------------------------------------------------ #
     def _compute_epoch_stats(self) -> Dict[str, float]:
         total = len(self.dataset)
@@ -112,7 +112,7 @@ class CustomBatchSampler(Sampler[List[int]]):
         }
 
     # ------------------------------------------------------------------ #
-    # NEW: Pretty print stats once
+    # Pretty print stats once
     # ------------------------------------------------------------------ #
     def _print_stats(self) -> None:
         s = self.stats
@@ -126,7 +126,7 @@ class CustomBatchSampler(Sampler[List[int]]):
         )
 
     # ------------------------------------------------------------------ #
-    # Iterator (unchanged generation logic)
+    # Iterator
     # ------------------------------------------------------------------ #
     def __iter__(self) -> Iterator[List[int]]:
         rng = random.Random(self._rng_global.random())
@@ -340,7 +340,7 @@ class CustomBatchSampler2(Sampler[Dict[str, List[int]]]):
         return self._compute_epoch_stats()["effective_batches_per_epoch"]
     
     # ------------------------------------------------------------------ #
-    # NEW: Compute expected number of yielded batches & skip reasons
+    # Compute expected number of yielded batches & skip reasons
     # ------------------------------------------------------------------ #
     def _compute_epoch_stats(self) -> Dict[str, float]:
         total = len(self.dataset)
@@ -404,7 +404,7 @@ class CustomBatchSampler2(Sampler[Dict[str, List[int]]]):
         }
 
     # ------------------------------------------------------------------ #
-    # NEW: Pretty print stats once
+    # Pretty print stats once
     # ------------------------------------------------------------------ #
     def _print_stats(self) -> None:
         s = self.stats
@@ -433,9 +433,9 @@ class TripleObjectiveSampler(Sampler[List[int]]):
         dataset,
         batch_size: int = 64,
         max_train_samples: int | None = 10000,
-        # NEW: Control the composition of the batch
+        # Control the composition of the batch
         batch_fractions: Tuple[float, float, float] = (0.5, 0.25, 0.25),
-        # NEW: `k` from the user request
+        # number of positives drawn per anchor
         positives_per_anchor: int = 4,
         seed: int = 42,
     ) -> None:

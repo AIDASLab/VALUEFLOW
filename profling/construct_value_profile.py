@@ -240,7 +240,7 @@ def select_by_significance_and_profile(
             # attach rank (1..), NaN gets rank after valid ones
             ranks = pd.Series(index=temp.index, data=np.arange(1, len(temp) + 1))
             rec["rank"] = ranks.reindex(rec.index)
-            # keep only selected top_keys for export brevity? user might want all. We'll keep selected only:
+            # export only the selected top_keys
             rec_sel = rec.loc[rec.index.intersection(top_keys)].reset_index()
             sel_rows.append(rec_sel)
 

@@ -8,8 +8,8 @@
 
 *ICML 2026*
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b.svg)](https://TODO-paper-link)
-[![GitHub](https://img.shields.io/badge/GitHub-Code-181717.svg?logo=github)](https://TODO-github-link)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b.svg)](https://arxiv.org/abs/2602.03160)
+[![Project Page](https://img.shields.io/badge/GitHub-Code-181717.svg?logo=github)](https://aidaslab.github.io/VALUEFLOW/)
 [![Model](https://img.shields.io/badge/🤗-Model-yellow.svg)](https://TODO-huggingface-model-link)
 [![Dataset](https://img.shields.io/badge/🤗-Dataset-yellow.svg)](https://TODO-huggingface-dataset-link)
 

@@ -9,9 +9,9 @@
 *ICML 2026*
 
 [![Paper](https://img.shields.io/badge/Paper-arXiv-b31b1b.svg)](https://arxiv.org/abs/2602.03160)
-[![Project Page](https://img.shields.io/badge/GitHub-Code-181717.svg?logo=github)](https://aidaslab.github.io/VALUEFLOW/)
+[![Project Page](https://img.shields.io/badge/Project-Page-blue.svg)](https://aidaslab.github.io/VALUEFLOW/)
 [![Model](https://img.shields.io/badge/🤗-Model-yellow.svg)](https://TODO-huggingface-model-link)
-[![Dataset](https://img.shields.io/badge/🤗-Dataset-yellow.svg)](https://TODO-huggingface-dataset-link)
+[![Dataset](https://img.shields.io/badge/🤗-Dataset-yellow.svg)](snu-aidas/vidb-filtered)
 
 </div>
 
@@ -29,11 +29,10 @@ intensity-controlled steering of LLMs. It integrates three components:
 
 ## 0) Environment Setup
 
-> The conda environment specification will be uploaded later.
-
 ```bash
-# TODO: conda env create -f environment.yml
-# conda activate valueflow
+conda create -n llm_value python==3.12
+conda activate llm_value
+pip install -r requirements.txt
 ```
 
 ---
@@ -42,11 +41,7 @@ intensity-controlled steering of LLMs. It integrates three components:
 
 HIVES is a hierarchical value embedding model trained on top of `Qwen/Qwen3-Embedding-0.6B`.
 
-**Download**
-
-```bash
-# TODO: model link (Hugging Face)
-```
+**Download** — available on the Hugging Face Hub: [`snu-aidas/HiVES-2`](https://huggingface.co/snu-aidas/HiVES-2)
 
 **Usage** — encode texts and save per-theory embeddings:
 
@@ -66,13 +61,8 @@ The input CSV needs at least `text` and `theory` columns; one NPZ of `(text, emb
 
 VIDB is the reference anchor set used for evaluation and steering. Two versions are released:
 
-- **Full set** — complete value-labeled corpus with intensity estimates.
-- **Filtered set** — a curated subset where LLM and human ratings agree.
-
-```bash
-# TODO: full set link
-# TODO: filtered set link
-```
+- **Full set** — complete value-labeled corpus with intensity estimates. *(link: TODO)*
+- **Filtered set** — a curated subset where LLM and human ratings agree: [`snu-aidas/vidb-filtered`](https://huggingface.co/datasets/snu-aidas/vidb-filtered)
 
 Place the downloaded files under `data/` (e.g. `data/final_ratings/`) before running evaluation.
 

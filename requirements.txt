@@ -1,0 +1,17 @@
+python>=3.12
+anthropic>=0.55.0
+sentence-transformers>=4.1
+transformers>=4.52
+vllm>=0.9.1
+datasets
+python-dotenv
+google-generativeai
+huggingface-hub
+matplotlib
+numpy
+openai
+torch>=2.6.0
+scikit-learn
+seaborn
+sentencepiece
+wandb
